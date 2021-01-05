@@ -1,0 +1,58 @@
+﻿<UserControl x:Class="MotorControl.Commons.Views.Readbacks.DigitalReadbacksControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MotorControl.Commons.Views.Readbacks" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
+             xmlns:common="clr-namespace:MotorControl.Commons.Controls.Common"
+             mc:Ignorable="d" 
+             d:DesignHeight="420" d:DesignWidth="360">
+    <UserControl.Resources>
+        <Style TargetType="{x:Type common:MotorControlReadbacksCard}">
+            <Setter Property="MinWidth" Value="140" />
+            <Setter Property="Margin" Value="0,10,10,0" />
+        </Style>
+        <Style TargetType="{x:Type common:Tile}">
+            <Setter Property="Padding" Value="20,20,10,20" />
+        </Style>
+        <Style TargetType="{x:Type Grid}">
+            <Setter Property="Margin" Value="0,10,0,0" />
+        </Style>
+    </UserControl.Resources>
+
+    <common:Tile Title="Digital Readbacks">
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <common:MotorControlReadbacksCard Grid.Row="0" Grid.Column="0"
+                                              Header="DC Voltage (V)" Value="3000" />
+            <common:MotorControlReadbacksCard Grid.Row="0" Grid.Column="1" 
+                                              Header="Current (A)" Value="3000" />
+            <common:MotorControlReadbacksCard Grid.Row="1" Grid.Column="0" 
+                                              Header="Stator Temp (C)" Value="3000" />
+            <common:MotorControlReadbacksCard Grid.Row="1" Grid.Column="1" 
+                                              Header="Efficency (%)" Value="3000" />
+            <common:MotorControlReadbacksCard Grid.Row="2" Grid.Column="0" 
+                                              Header="Power Input (W)" Value="3000" />
+            <common:MotorControlReadbacksCard Grid.Row="2" Grid.Column="1" 
+                                              Header="Power Output (W)" Value="3000" />
+            <common:MotorControlReadbacksCard Grid.Row="3" Grid.Column="0" 
+                                              Header="Torque (Nm)" Value="3000" />
+            <common:MotorControlReadbacksCard Grid.Row="3" Grid.Column="1" 
+                                              Header="Vibration" />
+            
+        </Grid>
+    </common:Tile>
+
+</UserControl>

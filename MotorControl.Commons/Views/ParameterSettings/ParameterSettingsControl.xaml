@@ -1,0 +1,79 @@
+﻿<UserControl x:Class="MotorControl.Commons.Views.ParameterSettings.ParameterSettingsControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:parameterSettings="clr-namespace:MotorControl.Commons.Views.ParameterSettings" 
+             xmlns:common="clr-namespace:MotorControl.Commons.Controls.Common"
+             mc:Ignorable="d" 
+             MinHeight="300" MinWidth="300" 
+             d:DesignHeight="1200" d:DesignWidth="450">
+    <UserControl.Resources>
+        <Style BasedOn="{StaticResource MaterialDesignExpanderOverrides}" TargetType="{x:Type Expander}">
+            <Setter Property="HorizontalAlignment" Value="Stretch" />
+            <Setter Property="Background" Value="#FFF3F3F3" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="FontSize" Value="13" />
+            <Setter Property="Margin" Value="10" />
+        </Style>
+    </UserControl.Resources>
+    <common:Tile Title="Parameter Settings">
+        
+        <common:Tile.NeighbourTitleTemplate>
+            <TextBlock Text="Expand All"
+                DockPanel.Dock="Right" 
+                HorizontalAlignment="Right" 
+                VerticalAlignment="Center"
+                FontWeight="Bold">
+                <TextBlock.TextDecorations>
+                    <TextDecoration/>
+                </TextBlock.TextDecorations>
+            </TextBlock>
+        </common:Tile.NeighbourTitleTemplate>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <Button Content="SET DEFAULTS" Grid.Column="0" Margin="5"/>
+            <Button Content="SAVE" Grid.Column="1" Margin="5"/>
+            <Button Content="LEAD" Grid.Column="2" Margin="5"/>
+
+            <StackPanel Margin="0,10,0,0" Grid.Row="1" Grid.ColumnSpan="3">
+                <Expander Header="Operating Limits">
+                    <parameterSettings:ParameterOperatingLimitsControl />
+                </Expander>
+
+                <Expander Header="Operation Type">
+                    <parameterSettings:ParameterOperationTypeControl />
+                </Expander>
+
+                <Expander Header="Fault Reset">
+                    <parameterSettings:ParameterFaultResetControl />
+                </Expander>
+
+                <Expander Header="Terminal Settings">
+                    <parameterSettings:ParameterTerminalSettingsControl />
+                </Expander>
+
+                <Grid Margin="0,10,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+
+                    <Button Margin="5" Grid.Column="0" Content="APPLY" />
+                    <Button Margin="5" Grid.Column="1" Content="Cancel"/>
+                </Grid>
+            </StackPanel>
+        </Grid>
+    </common:Tile>
+
+</UserControl>

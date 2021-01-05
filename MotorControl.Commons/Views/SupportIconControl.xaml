@@ -1,0 +1,878 @@
+﻿<UserControl x:Class="MotorControl.Commons.Views.SupportIconControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MotorControl.Commons.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Viewbox 
+    Stretch="Uniform">
+
+        <Canvas Name="svg242" Width="226" Height="77.436">
+            <Canvas.RenderTransform>
+                <TranslateTransform X="0" Y="0"/>
+            </Canvas.RenderTransform>
+            <Canvas.Resources/>
+            <!--Unknown tag: metadata-->
+            <!--Unknown tag: sodipodi:namedview-->
+            <Canvas Name="иллюстрация_поддержка">
+                <Canvas.RenderTransform>
+                    <TranslateTransform X="0" Y="-0.03"/>
+                </Canvas.RenderTransform>
+                <Canvas Name="Слой_1">
+                    <Canvas.RenderTransform>
+                        <TranslateTransform X="0" Y="0.03"/>
+                    </Canvas.RenderTransform>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_17" Fill="#FFEBF3FA">
+                        <Path.Data>
+                            <PathGeometry Figures="M115.3 197.369V251l-64.518.225c.163-2.344-10.457-33.263 3.155-50.926 19.316-25.075 35.824-4.793 57.611-3.036A35.892 35.892 0 0 0 115.3 197.369Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-43.468" Y="-173.787"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_18" Fill="#FFF3F8FC">
+                        <Path.Data>
+                            <PathGeometry Figures="M1107.344 76.2c-.087.67-7.077-.108-7.174.551l-43.613.15H959.1V23.612a34.659 34.659 0 0 0 3.745-.3 36.407 36.407 0 0 0 13.515-4.819c49.2-28.534 89.258-20.785 111.75 1.491A66.989 66.989 0 0 1 1107.344 76.2Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-887.271" Y="-0.03"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_19" Fill="#FFEBF3FA" Opacity="0.6">
+                        <Path.Data>
+                            <PathGeometry Figures="M1107.884 904.47a67.289 67.289 0 0 1-.54 8.815c-.087.674-7.077-.108-7.174.551l-43.613.15H959.1v-.04l97.457-.335 43.613-.15c.1-.659 7.087.119 7.174-.551A67.283 67.283 0 0 0 1107.884 904.47Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-887.271" Y="-836.735"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_20" Fill="#FFE8F0FD">
+                        <Path.Data>
+                            <PathGeometry Figures="M1135.006 242.551v40.756H1009.15V247.842h9.648v-9.679h9.647v13.077h7.811v-2.922h13.606v4.94h5.921V242.163h15.85V223.14h12.532v10.146h2.859v-8.5h12.532v13.092h11.359v-8.034h12.148v8.034h2.266v4.672Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-933.573" Y="-206.431"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Rectangle xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Width="13.06" Height="12.67" RadiusX="6.335" RadiusY="6.335" Name="Прямоугольник_148" Fill="#FFC0D8FB">
+                        <Rectangle.RenderTransform>
+                            <TranslateTransform X="45.184" Y="27.021"/>
+                        </Rectangle.RenderTransform>
+                    </Rectangle>
+                    <Rectangle xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Width="11.928" Height="11.572" RadiusX="5.786" RadiusY="5.786" Name="Прямоугольник_149" Fill="#FFDFEBFD">
+                        <Rectangle.RenderTransform>
+                            <TranslateTransform X="45.749" Y="27.57"/>
+                        </Rectangle.RenderTransform>
+                    </Rectangle>
+                    <Ellipse xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="0" Canvas.Top="0" Width="0.5" Height="0.5" Name="Эллипс_2" Fill="#FFB7D3F3">
+                        <Ellipse.RenderTransform>
+                            <TranslateTransform X="51.443" Y="28.456"/>
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_21" Fill="#FFB7D3F3">
+                        <Path.Data>
+                            <PathGeometry Figures="M715.581 386.99a.271.271 0 1 1-.023.206A.27.27 0 0 1 715.581 386.99Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-661.958" Y="-357.881"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_22" Fill="#FFB7D3F3">
+                        <Path.Data>
+                            <PathGeometry Figures="M739.474 408.016a.27.27 0 1 1-.08.374A.27.27 0 0 1 739.474 408.016Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-683.979" Y="-377.421"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Ellipse xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="0" Canvas.Top="0" Width="0.5" Height="0.5" Name="Эллипс_3" Fill="#FFB7D3F3">
+                        <Ellipse.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="-67.62"/>
+                                <TranslateTransform X="56.07" Y="33.313"/>
+                            </TransformGroup>
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_23" Fill="#FFB7D3F3">
+                        <Path.Data>
+                            <PathGeometry Figures="M741.367 473.914a.27.27 0 1 1-.383 0A.27.27 0 0 1 741.367 473.914Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-685.417" Y="-438.35"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Ellipse xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="0" Canvas.Top="0" Width="0.5" Height="0.5" Name="Эллипс_4" Fill="#FFB7D3F3">
+                        <Ellipse.RenderTransform>
+                            <TranslateTransform X="53.789" Y="37.188"/>
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+                    <Ellipse xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="0" Canvas.Top="0" Width="0.5" Height="0.5" Name="Эллипс_5" Fill="#FFB7D3F3">
+                        <Ellipse.RenderTransform>
+                            <TranslateTransform X="51.443" Y="37.874"/>
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_24" Fill="#FFB7D3F3">
+                        <Path.Data>
+                            <PathGeometry Figures="M658.6 386.99a.27.27 0 1 0-.106.368A.27.27 0 0 0 658.6 386.99Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-608.807" Y="-357.881"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_25" Fill="#FFB7D3F3">
+                        <Path.Data>
+                            <PathGeometry Figures="M634.739 408.016a.27.27 0 1 0 .08.374A.27.27 0 0 0 634.739 408.016Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-586.817" Y="-377.421"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Ellipse xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="0" Canvas.Top="0" Width="0.5" Height="0.5" Name="Эллипс_6" Fill="#FFB7D3F3">
+                        <Ellipse.RenderTransform>
+                            <TranslateTransform X="46.726" Y="32.895"/>
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_26" Fill="#FFB7D3F3">
+                        <Path.Data>
+                            <PathGeometry Figures="M632.854 473.914a.27.27 0 1 0 .383 0A.27.27 0 0 0 632.854 473.914Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-585.385" Y="-438.35"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Ellipse xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="0" Canvas.Top="0" Width="0.5" Height="0.5" Name="Эллипс_7" Fill="#FFB7D3F3">
+                        <Ellipse.RenderTransform>
+                            <TranslateTransform X="49.089" Y="37.188"/>
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+                    <Ellipse xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="0" Canvas.Top="0" Width="0.5" Height="0.5" Name="Эллипс_8" Fill="#FFB7D3F3">
+                        <Ellipse.RenderTransform>
+                            <TranslateTransform X="51.641" Y="32.895"/>
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+                    <Rectangle xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Width="0.074" Height="3.38" Name="Прямоугольник_150" Fill="#FFB7D3F3">
+                        <Rectangle.RenderTransform>
+                            <TranslateTransform X="51.874" Y="29.785"/>
+                        </Rectangle.RenderTransform>
+                    </Rectangle>
+                    <Rectangle xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Width="2.277" Height="0.222" Name="Прямоугольник_151" Fill="#FFB7D3F3">
+                        <Rectangle.RenderTransform>
+                            <MatrixTransform Matrix="0.786 -0.618 0.618 0.786 51.808 33.069"/>
+                        </Rectangle.RenderTransform>
+                    </Rectangle>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_27" Fill="#FFDEEDFF">
+                        <Path.Data>
+                            <PathGeometry Figures="M916.5 310.87v53.315H909V311.062A34.324 34.324 0 0 0 916.5 310.87Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-840.923" Y="-287.591"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_28" Fill="#FFDEEDFF">
+                        <Path.Data>
+                            <PathGeometry Figures="M2689.26 275.29v47.781h-7.5V266.43A66.379 66.379 0 0 1 2689.26 275.29Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-2480.918" Y="-246.479"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Rectangle xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Width="226" Height="0.971" RadiusX="0.486" RadiusY="0.486" Name="Прямоугольник_152" Fill="#FF2E3552">
+                        <Rectangle.RenderTransform>
+                            <TranslateTransform X="0" Y="76.39"/>
+                        </Rectangle.RenderTransform>
+                    </Rectangle>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_29" Fill="#FFB7D3F3">
+                        <Path.Data>
+                            <PathGeometry Figures="M1076.4 771.49h-1.2l1.472 18.641h2.926Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-994.676" Y="-713.714"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_30" Fill="#FF122544">
+                        <Path.Data>
+                            <PathGeometry Figures="M1372.531 630.056l-.258.052a2.138 2.138 0 0 1-2.513-1.668l-.273-1.348a2.139 2.139 0 0 1 1.668-2.513l.258-.052a2.139 2.139 0 0 1 2.513 1.668l.272 1.348A2.139 2.139 0 0 1 1372.531 630.056Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-1266.885" Y="-577.719"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_31" Fill="#FFB7D3F3">
+                        <Path.Data>
+                            <PathGeometry Figures="M1075.2 750.044a25.868 25.868 0 0 1 15.568-1.032l-14.365 1.032Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-994.676" Y="-692.268"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_32" Fill="#FFD2E3FC">
+                        <Path.Data>
+                            <PathGeometry Figures="M1094.456 771.753l-3.2-18.819s10.064-3.38 17.871 0l4.643 18.7Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-1009.534" Y="-695.158"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_33" Fill="#FF82B378">
+                        <Path.Data>
+                            <PathGeometry Figures="M1892.4 904.61c-.178 2.042-1.332 2.673-1.839 2.621s-3.472-1.186-3.536-.771 1.722 1.773 2.97 1.836c0 0-2.36 2.6-3.928 1.851s-1.7-1.941-2.679-2.388-1.812-.449-1.409.01 2.172.9 2.732 1.887c.132.233.261.449.359.639l-3.3-.007c-1.049-.524-1.929-1.238-2-2.012-.005-.059-.01-.115-.014-.169l-.1-1.19s-1.7-1.978-.814-3.619a2.5 2.5 0 0 1 .674-.78 6.134 6.134 0 0 1 2.869-.879 15.5 15.5 0 0 0-1.28 2.67c-.1.351-.109.617.045.7s.386-.166.612-.571a20.787 20.787 0 0 0 1.177-2.988s.95-.092 2.031-.106a14.039 14.039 0 0 1 1.461.043 3.912 3.912 0 0 1 1.26.27s-.064.052-.172.143c-.162.136-.42.354-.708.609-.852.754-1.961 1.818-1.547 1.914a6.08 6.08 0 0 0 2.322-1.168c.872-.577 1.648-1.151 1.648-1.151S1892.58 902.565 1892.4 904.61Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-1737.898" Y="-833.839"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_34" Fill="#FF82B378">
+                        <Path.Data>
+                            <PathGeometry Figures="M1878.981 945.5s-9.09-.351-11.1 2.247a6.578 6.578 0 0 1-1.81 2.54l-.213.58s1.573-1.661 2.139-1.761C1868 949.114 1867.117 945.892 1878.981 945.5Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-1726.123" Y="-874.682"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_35" Fill="#FF82B378">
+                        <Path.Data>
+                            <PathGeometry Figures="M1859.008 1006.816c-.075.085-.195.2-.362.356h0q-.086.081-.168.173a3.33 3.33 0 0 0-.243.3h-.425a5.123 5.123 0 0 1 .819-.824h0C1858.66 1006.81 1859.443 1006.337 1859.008 1006.816Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-1718.675" Y="-931.218"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_36" Fill="#FFA8D29F">
+                        <Path.Data>
+                            <PathGeometry Figures="M1594.176 813.248s3.67-2.054 1.956-4.842a7.283 7.283 0 0 0-2.836-2.152s.782 4.157 0 4.255-.539-4.694-.539-4.694-3.863-1.859-5.379-1.712c0 0 2.4 4.059 1.614 3.961s-3.473-4.205-3.473-4.205-3.961-.734-4.6 1.614.392 3.52.978 3.67 4.353.1 4.255.586-2.641 1.273-4.058.831c0 0 1.565 3.864 3.619 3.67s2.689-1.467 3.961-1.565 2.2.245 1.564.587-2.787.112-3.814.985-1.858 1.411.049 1.8 5.331.15 6.015-1.32Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-1462.339" Y="-743.558"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_37" Fill="#FF82B378">
+                        <Path.Data>
+                            <PathGeometry Figures="M1607.56 836.54s10.27 3.325 11.443 7.04a7.805 7.805 0 0 0 .978 3.57v.733s-1.076-2.494-1.663-2.836C1618.319 845.049 1620.617 841.821 1607.56 836.54Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-1487.167" Y="-773.892"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_38" Fill="#FF82B378">
+                        <Path.Data>
+                            <PathGeometry Figures="M1768.333 975.83h-.586a7.657 7.657 0 0 0-.406-2.528h0c-.036-.091-.075-.178-.118-.261h0c-.121-.238-.2-.414-.256-.541h0c-.3-.735.417.169.417.169A6.882 6.882 0 0 1 1768.333 975.83Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-1634.567" Y="-899.403"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_39" Fill="#FFA8D29F">
+                        <Path.Data>
+                            <PathGeometry Figures="M1799.01 738.119s-4.834-2.708-2.579-6.382a9.6 9.6 0 0 1 3.739-2.836s-1.031 5.479 0 5.608.709-6.188.709-6.188 5.093-2.45 7.091-2.256c0 0-3.159 5.35-2.128 5.221s4.577-5.542 4.577-5.542 5.221-.967 6.06 2.128-.516 4.643-1.29 4.834-5.737.129-5.608.774 3.481 1.676 5.35 1.1c0 0-2.063 5.093-4.771 4.835s-3.545-1.934-5.221-2.062-2.9.322-2.062.774 3.674.15 5.028 1.3 2.449 1.86-.064 2.376-7.027.193-7.93-1.74Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-1661.339" Y="-671.261"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_40" Fill="#FF82B378">
+                        <Path.Data>
+                            <PathGeometry Figures="M1837.434 768.8s-13.537 4.383-15.085 9.287a10.286 10.286 0 0 1-1.289 4.705v.967s1.418-3.288 2.191-3.739C1823.251 780.017 1820.222 775.762 1837.434 768.8Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-1684.678" Y="-711.225"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_41" Fill="#FF82B378">
+                        <Path.Data>
+                            <PathGeometry Figures="M1806.021 947.921h0c-.069.169-.177.4-.339.716h0c-.056.109-.107.225-.155.344h0a11.338 11.338 0 0 0-.538 4.028h-.777a9.09 9.09 0 0 1 1.26-4.868h0C1805.492 948.117 1806.412 946.963 1806.021 947.921Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-1669.089" Y="-876.581"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_42" Fill="#FF2B478B">
+                        <Path.Data>
+                            <PathGeometry Figures="M1263.11 756.016h-18.389a19.6 19.6 0 0 1-.719-2.1 35.7 35.7 0 0 1-1.08-5.833.6.6 0 0 0-.008-.075 67.173 67.173 0 0 1-.323-8.72c.028-1.147.075-1.854.075-1.889h0l.118-.049c.974-.409 1.911-.762 2.807-1.067h.008c.753-.257 1.479-.479 2.176-.674a31.886 31.886 0 0 1 3.424-.749 24.963 24.963 0 0 1 3.381-.312h.136c.266 0 .524 0 .774 0a14.689 14.689 0 0 1 5.04.889c.118.046.219.091.3.13l.033.013c.1.043.17.079.225.1l.02.011.075.041 1.326 13.936Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-1149.509" Y="-679.539"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_43" Fill="#FF2B478B">
+                        <Path.Data>
+                            <PathGeometry Figures="M1456.369 759.492c-1.842.855-12.8 1.573-13.855 1.273-.539-.156-2.8-2.146-5.072-4.594h0c-2.151-2.316-4.32-5.041-5.051-7a12 12 0 0 1-.212-7.609s2.8-.012 3.936.674 7.657 12.69 8.529 13 11.2.909 12.378 1.47C1457.022 756.708 1458.21 758.634 1456.369 759.492Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-1324.444" Y="-686.025"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_44" Fill="#FFEA9E6A">
+                        <Path.Data>
+                            <PathGeometry Figures="M1318.89 692.735v.679s.189 2.122-2.424 2.436-4.595-.824-4.526-2.459a19.177 19.177 0 0 0 .506-3.189 7.351 7.351 0 0 0-.094-1.273l5.063-.109 1.492.242Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-1213.684" Y="-637.235"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_45" Fill="#FFD88D59">
+                        <Path.Data>
+                            <PathGeometry Figures="M1324.016 690.443l-.014 3.67a4.29 4.29 0 0 1-1.824.406c-2.328 0-4.643-3.745-4.718-4.209Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-1218.793" Y="-638.614"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_46" Fill="#FFEA9E6A">
+                        <Path.Data>
+                            <PathGeometry Figures="M1309.159 583.712s-6.483 1.32-7.243-2.731-2.109-6.607 2-7.622 5.2.38 5.786 1.671S1310.826 583.264 1309.159 583.712Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-1203.642" Y="-530.099"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_47" Fill="#FF8E342E">
+                        <Path.Data>
+                            <PathGeometry Figures="M1288.9 542.923a13.594 13.594 0 0 1-3.944-1.06c-1.732-.749-3.915.082-4.624.457a1.053 1.053 0 0 1 .172-.427.945.945 0 0 0-.365.542c-.032.024-.047.04-.039.046a1.3 1.3 0 0 0-.592.039s.162-.023.22.081a.105.105 0 0 0 .026.028c-2.7 1.309-2.942 5.578-2.071 6.564a21.892 21.892 0 0 1 2.3 3.858 2.294 2.294 0 0 0 .264-1.678c-.192-1.045.711-1.048 1.851-1.524s.187-1.806 1.184-2.616 4.657-.339 4.609-.957C1289.254 545.782 1288.9 543.062 1288.9 542.923Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-1181.582" Y="-501.004"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_48" Fill="#FF233862">
+                        <Path.Data>
+                            <PathGeometry Figures="M1249.007 912.566a19.573 19.573 0 0 1-.719-2.1 35.7 35.7 0 0 1-1.08-5.833.576.576 0 0 0-.008-.075c.014.007.037.044.052.026.716-.87 2.671-1.821 5.038 1.643.472.69 2.546 5.528 2.874 6.337Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-1153.795" Y="-836.09"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_49" Fill="#FFEA9E6A">
+                        <Path.Data>
+                            <PathGeometry Figures="M1296.781 992.6a1.976 1.976 0 0 1 .25-1.2s.3-.2.705-.426a4.112 4.112 0 0 1 1.8-.683c.067.012.157.031.264.058a11.426 11.426 0 0 1 3.25 1.216c.256.306.605.694.846 1.032Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-1199.647" Y="-916.124"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_50" Fill="#FF2B478B">
+                        <Path.Data>
+                            <PathGeometry Figures="M1100.7 781.966H1083.37a1.048 1.048 0 0 1 .014-.583c.517-1.305 1.526-3.455 2.687-5.761.854-1.7 1.791-3.477 2.675-5.071a35.713 35.713 0 0 1 3.013-4.821 7.822 7.822 0 0 1 1.864-1.511 13.053 13.053 0 0 1 1.738-.869h0l.118-.049a15.33 15.33 0 0 1 2.163-.7s.013.547.013 1.389c0 2.442-.09 7.363-.869 8.565a16.178 16.178 0 0 1-1.128 1.433l-.043.05c-.274.321-.577.666-.9 1.022-1.808 2.022-4.1 4.4-4.377 4.694l-.028.029h.033l4.858.068 1.49.02 3.09.043a1.167 1.167 0 0 1 .506.431A3.079 3.079 0 0 1 1100.7 781.966Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-1002.202" Y="-705.49"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_51" Fill="#FF233862">
+                        <Path.Data>
+                            <PathGeometry Figures="M1527.757 935.7c-1.842.855-12.8 1.573-13.855 1.273-.539-.156-2.8-2.146-5.072-4.594.112.015 1.151-1.717 5.891 2.429 0 0 1.241.552 4.619.243S1527.057 934.624 1527.757 935.7Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-1395.831" Y="-862.235"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_52" Fill="#FFB24940">
+                        <Path.Data>
+                            <PathGeometry Figures="M1463.058 1008.409H1450.53a1 1 0 0 1 1-1h11.533Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-1341.897" Y="-931.966"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_53" Fill="#FFB24940">
+                        <Path.Data>
+                            <PathGeometry Figures="M1558.382 838.57h19.368l-4.646 13.644H1553.61Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-1437.257" Y="-775.77"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_54" Fill="#FFC65447">
+                        <Path.Data>
+                            <PathGeometry Figures="M1581.561 838.56l-4.646 13.645H1557.42l4.771-13.645Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-1440.782" Y="-775.761"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_55" Fill="#FFF9DDBF">
+                        <Path.Data>
+                            <PathGeometry Figures="M1716.7 916.344a1.255 1.255 0 0 1-1.162.944.726.726 0 0 1-.726-.944 1.259 1.259 0 0 1 1.161-.944A.726.726 0 0 1 1716.7 916.344Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-1586.361" Y="-846.846"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_56" Fill="#FFB24940">
+                        <Path.Data>
+                            <PathGeometry Figures="M1710.345 838.56 1705.7 852.2h-9.069l10.862-13.645Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-1569.566" Y="-775.761"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_57" Fill="#FF122544">
+                        <Path.Data>
+                            <PathGeometry Figures="M1299.267 630.037l-.258.052a2.138 2.138 0 0 1-2.513-1.668l-.273-1.348a2.139 2.139 0 0 1 1.667-2.514l.258-.052a2.139 2.139 0 0 1 2.513 1.668l.272 1.348A2.139 2.139 0 0 1 1299.267 630.037Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-1199.108" Y="-577.701"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_58" Fill="#FF122544">
+                        <Path.Data>
+                            <PathGeometry Figures="M1308.178 548.511a9.541 9.541 0 0 1 .264-4.825 3.207 3.207 0 0 1 1.55-1.89 1.658 1.658 0 0 1 .8-.207l.68.011c-2.241.949-2.76 6.024-2.585 6.565a.224.224 0 0 0-.017-.037Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-1210.029" Y="-501.032"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_59" Fill="#FF122544">
+                        <Path.Data>
+                            <PathGeometry Figures="M1328.1 664.822a6.942 6.942 0 0 1-5.648-3.005l.336-.206-.169.1.169-.1a6.537 6.537 0 0 0 5.311 2.817h.075l0 .395Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-1223.409" Y="-612.063"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_60" Fill="#FF2B478B">
+                        <Path.Data>
+                            <PathGeometry Figures="M1310.281 646.893l-.129.026a1.065 1.065 0 0 1-1.251-.831l-.136-.674a1.066 1.066 0 0 1 .831-1.252l.129-.026a1.066 1.066 0 0 1 1.251.831l.136.674A1.065 1.065 0 0 1 1310.281 646.893Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-1210.729" Y="-595.879"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_61" Fill="#FF122544">
+                        <Path.Data>
+                            <PathGeometry Figures="M1395.664 698.128h-.355a.33.33 0 0 1-.329-.329h0a.33.33 0 0 1 .329-.329h.355a.33.33 0 0 1 .329.329h0A.329.329 0 0 1 1395.664 698.128Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-1290.508" Y="-645.237"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_62" Fill="#FF8E342E">
+                        <Path.Data>
+                            <PathGeometry Figures="M302.175 527.246s-3.16 1.615-.857 5.085c0 0-2.715.314-3.4-.467a2.23 2.23 0 0 0 .225.508s-2.629-.344-3.572-1.341 1.994-14.254 9-11.542c0 0 6.227.568 4.461 7.587s.554 7.41.554 7.41a3.352 3.352 0 0 1-1.011.157s-.426-.25-.474-.518a1.658 1.658 0 0 0 .119.556s-2.546-.183-3.638-1.339S301.572 528.654 302.175 527.246Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-272.354" Y="-480.248"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_63" Fill="#FFED7D2B">
+                        <Path.Data>
+                            <PathGeometry Figures="M423.974 606.713l-.253.034a2.074 2.074 0 0 1-2.332-1.764l-.183-1.322a2.074 2.074 0 0 1 1.764-2.332l.252-.035a2.074 2.074 0 0 1 2.332 1.764l.186 1.323A2.074 2.074 0 0 1 423.974 606.713Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-389.643" Y="-556.247"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_64" Fill="#FFFFB27D">
+                        <Path.Data>
+                            <PathGeometry Figures="M309.686 676.033c-.942.728-1.539 3.355-3.059 3.789-5.7 1.626-8.756-5.14-9.757-8.443a4.954 4.954 0 0 1 1.923-.7c.414-.07.851-.125 1.212-.162.622-.529 1.484-2.608 1.536-5.767l.275.058 4.611 1.009s-.135 1.455-.167 2.826c-.025 1.072-.059 1.329.024 1.457.358.059.78.974.78.974a.009.009 0 0 0 0 0A29.18 29.18 0 0 1 309.686 676.033Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-274.637" Y="-614.968"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_65" Fill="#FFED985F">
+                        <Path.Data>
+                            <PathGeometry Figures="M367.568 666.511s-.136 1.454-.167 2.826c-2.587-.126-3.907-2.516-4.441-3.837Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-335.777" Y="-615.662"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_66" Fill="#FFD2E3FC">
+                        <Path.Data>
+                            <PathGeometry Figures="M278.945 755.258s-2.709.1-5.651.109h-1.048a32.228 32.228 0 0 1-5.753-.352c-.979-.252-4.745-2.8-7.759-5.9h0c-.234.557-.41.983-.414 1.016a15.735 15.735 0 0 1-.416 2.057 25.021 25.021 0 0 1-1.861 4.761h-1.614l-12.6-.018s2.376-3.671 1.735-13.061c-.016-.237 2.194-7.814 2.194-7.814s1.717-.3 3.7-.46c.187.171.572 5.155 3.055 5.443.4.047 3 4 3 4l.784-4.044-.928-5.362a28.335 28.335 0 0 1 2.834.87 3.13 3.13 0 0 1 1.58 1.4c1.734 3.169 7.362 13.391 7.939 13.63a41.051 41.051 0 0 0 4.711 1.02h0c2.87.524 5.952 1.022 5.952 1.022Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-223.719" Y="-680.512"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_67" Fill="#FFD2E3FC">
+                        <Path.Data>
+                            <PathGeometry Figures="M432.412 1020.71h0Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-399.193" Y="-944.27"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_68" Fill="#FFFFB27D">
+                        <Path.Data>
+                            <PathGeometry Figures="M360.714 568.775s-6.127-.121-5.991-3.935-.568-6.4 3.35-6.483 4.626 1.4 4.891 2.682S362.311 568.708 360.714 568.775Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-328.155" Y="-516.54"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_69" Fill="#FFB7D3F3">
+                        <Path.Data>
+                            <PathGeometry Figures="M482.14 886.9h-1.048a32.222 32.222 0 0 1-5.753-.352c-.979-.252-4.745-2.8-7.759-5.9h0a21.415 21.415 0 0 1 .91-2.841c.274-.407 1.355 3.551 3.881 5.162s6.474 2.739 8.392 2.282C482.055 884.945 482.188 886.109 482.14 886.9Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-432.562" Y="-812.043"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_70" Fill="#FFFFFFFF">
+                        <Path.Data>
+                            <PathGeometry Figures="M418.68 667.444s.039.457 1.043.529c0 0 .844.061.879-.43A2.476 2.476 0 0 0 418.68 667.444Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-387.324" Y="-617.331"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_71" Fill="#FF122544">
+                        <Path.Data>
+                            <PathGeometry Figures="M369.454 633.92a6.732 6.732 0 0 1-4.344-4.428l.374-.092-.186.046.186-.046a6.336 6.336 0 0 0 4.088 4.156l.066.02-.118.366Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-337.766" Y="-582.265"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_72" Fill="#FFED7D2B">
+                        <Path.Data>
+                            <PathGeometry Figures="M421.578 684.231l-.327-.1a.321.321 0 0 1-.208-.4h0a.32.32 0 0 1 .4-.208l.329.1a.319.319 0 0 1 .207.4h0A.319.319 0 0 1 421.578 684.231Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-389.496" Y="-632.319"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_73" Fill="#FF8E342E">
+                        <Path.Data>
+                            <PathGeometry Figures="M352.245 543.9s-1.568 4.643-3.921 5.434-3.133-.145-3.133-.145a6.812 6.812 0 0 0 1.933-4.169S350.924 542 352.245 543.9Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-319.338" Y="-502.586"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_74" Fill="#FF8E342E">
+                        <Path.Data>
+                            <PathGeometry Figures="M400.28 550.49s3.194-.179 4.149.73a2.125 2.125 0 0 1 .726 1.872s1.4-2.155-.04-3.663C403.59 547.831 400.28 550.49 400.28 550.49Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-370.302" Y="-507.811"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_75" Fill="#FF8E342E">
+                        <Path.Data>
+                            <PathGeometry Figures="M391.565 544.632s-.8 4.446-3.725 6.061c0 0 2.832-2.9 2.883-5.8S391.565 544.632 391.565 544.632Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-358.794" Y="-502.829"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_76" Fill="#FF8E342E">
+                        <Path.Data>
+                            <PathGeometry Figures="M294.555 531.01c.941 1 3.572 1.341 3.572 1.341a2.209 2.209 0 0 1-.225-.508c1.352 1.1 4.67.3 4.67.3-2.647-.585-1.79-4.406-.89-4.568a82.588 82.588 0 0 1 2.054-8.081c-.118-.019-.184-.025-.184-.025C296.551 516.756 293.613 530.014 294.555 531.01Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-272.337" Y="-480.228"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_77" Fill="#FFED7D2B">
+                        <Path.Data>
+                            <PathGeometry Figures="M339.031 601.481l-.253.035a2.074 2.074 0 0 1-2.332-1.764l-.183-1.323a2.072 2.072 0 0 1 1.764-2.331l.252-.035a2.073 2.073 0 0 1 2.332 1.764l.183 1.322A2.073 2.073 0 0 1 339.031 601.481Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-311.062" Y="-551.407"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_78" Fill="#FFED7D2B">
+                        <Path.Data>
+                            <PathGeometry Figures="M351.054 524.745a11.255 11.255 0 0 1 1.152-4.171 5.127 5.127 0 0 1 2-2.2 1.444 1.444 0 0 1 .832 0 6.2 6.2 0 0 1 .731.294c-2.219.691-4.147 5.341-4.007 5.823a.174.174 0 0 0-.015-.034Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-324.739" Y="-479.495"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_79" Fill="#FFF99746">
+                        <Path.Data>
+                            <PathGeometry Figures="M349.512 617.622l-.126.017a1.033 1.033 0 0 1-1.162-.879l-.091-.658a1.033 1.033 0 0 1 .88-1.162l.127-.017a1.033 1.033 0 0 1 1.162.879l.091.658A1.034 1.034 0 0 1 349.512 617.622Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-322.052" Y="-568.863"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_80" Fill="#FFFFB27D">
+                        <Path.Data>
+                            <PathGeometry Figures="M565.171 967.726a20.084 20.084 0 0 1 2.883-.013 14.509 14.509 0 0 1 2.047 1.4 14.758 14.758 0 0 1 .8 1.324s-.251.07-.364-.032-.974-1.012-.974-1.012l.881 1.338a.747.747 0 0 1-.425-.146c-.121-.133-.944-.974-.944-.974l-.28-.055a3.042 3.042 0 0 1 .44.437 2.679 2.679 0 0 1 .258.43 2.08 2.08 0 0 1-.33-.08c-.075-.037-.816-.683-.816-.683l.391.534a.988.988 0 0 1-.35-.075 5.3 5.3 0 0 0-.763-.587 3.452 3.452 0 0 1-1.151-.2c-.315-.167-1.3-.55-1.3-.55Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-522.844" Y="-895.188"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_81" Fill="#FFB7D3F3">
+                        <Path.Data>
+                            <PathGeometry Figures="M321.908 725.83a8.318 8.318 0 0 0-2.158.916s1.837 4.7 4.485 6.89l.708-.5v1.141l2.651 1.735S321.772 727.251 321.908 725.83Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-295.803" Y="-671.474"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_82" Fill="#FFB7D3F3">
+                        <Path.Data>
+                            <PathGeometry Figures="M289.779 855.572a25.018 25.018 0 0 1-1.861 4.761h-8.373s.974 0 .969-.007c-.022-.085 1.415-3.983-.969-5.582s-3.255-5.537-3.255-5.537l7.6-1.857s3.132 4.568 4.023 5.442a4.186 4.186 0 0 0 2.28.719Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-255.598" Y="-783.893"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_83" Fill="#FFB7D3F3">
+                        <Path.Data>
+                            <PathGeometry Figures="M422.043 726.605s.808 6.389.143 9.4c0 0 1.085-1.994 1.237-2.359l-.182-1.1.7.243s-.617-5.093-1.176-5.987-.765-.98-.765-.98Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-390.396" Y="-671.474"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_84" Fill="#FFFFB27D">
+                        <Path.Data>
+                            <PathGeometry Figures="M650.615 964.823s-3.39.125-6.7.109a2.8 2.8 0 0 1 .185-2.8h0c2.87.524 5.952 1.022 5.952 1.022Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-595.389" Y="-890.077"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_85" Fill="#FFED7D2B">
+                        <Path.Data>
+                            <PathGeometry Figures="M586.958 1008.409H574.43a1 1 0 0 1 1-1h11.533Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-531.41" Y="-931.966"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_86" Fill="#FFED7D2B">
+                        <Path.Data>
+                            <PathGeometry Figures="M701.651 838.56 697.005 852.2h-19.5l4.772-13.645Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-626.77" Y="-775.761"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_87" Fill="#FFF99746">
+                        <Path.Data>
+                            <PathGeometry Figures="M705.175 838.56l-4.6 13.518-.043.127H681.32l4.771-13.645Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-630.295" Y="-775.761"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_88" Fill="#FFFFC397">
+                        <Path.Data>
+                            <PathGeometry Figures="M840.6 916.344a1.255 1.255 0 0 1-1.162.944.726.726 0 0 1-.726-.944 1.259 1.259 0 0 1 1.161-.944A.725.725 0 0 1 840.6 916.344Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-775.874" Y="-846.846"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_89" Fill="#FFED7D2B">
+                        <Path.Data>
+                            <PathGeometry Figures="M833.969 838.56l-4.6 13.518H820.54L831.3 838.56Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-759.088" Y="-775.761"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_90" Fill="#FFFFB27D">
+                        <Path.Data>
+                            <PathGeometry Figures="M441.523 944.5s-6.449.564-10.013.405v-3.5c2.335.645 10.011 2.036 10.011 2.036Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-399.193" Y="-870.899"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_91" Fill="#FFD2E3FC">
+                        <Path.Data>
+                            <PathGeometry Figures="M256.128 738.06s-3.688.084-4.83 1.317 1.133 8.2 1.133 8.2 6.874 8.419 10.313 9.012c0 0 1.5.206 2.2.217a3.387 3.387 0 0 1 .591-3.26s-1.472-.412-1.533-.595S256.128 738.06 256.128 738.06Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-232.181" Y="-682.788"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_92" Fill="#FF2C3A64">
+                        <Path.Data>
+                            <PathGeometry Figures="M2181.76 521.811s-3.735-1.389-6.066 1.339c-1.341 1.568-9.9 17.876-9.795 19.3a3.257 3.257 0 0 0 .918 2.143 3.852 3.852 0 0 1-.089-1.9s-.172 2.2 1.186 3.136c.708.488 18.322-.468 19.852-2.6 3.328-4.639-3.939-7.04-3.761-12.049C2184.108 528.277 2186.963 522.1 2181.76 521.811Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-2003.69" Y="-482.407"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_93" Fill="#FFED7D2B">
+                        <Path.Data>
+                            <PathGeometry Figures="M2388.285 598.184l-.25.051a2.075 2.075 0 0 1-2.436-1.618l-.264-1.308a2.075 2.075 0 0 1 1.618-2.436l.25-.05a2.074 2.074 0 0 1 2.436 1.617l.264 1.308A2.074 2.074 0 0 1 2388.285 598.184Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-2206.655" Y="-548.39"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_94" Fill="#FFF99746">
+                        <Path.Data>
+                            <PathGeometry Figures="M2436.846 763.128h-11.687a28.982 28.982 0 0 1-4.131-10.7 6.456 6.456 0 0 1 .439-3.855c1.632-2.883-.957-6.268-.957-6.268s3.565 1.009 4.393 3.948c.845 3 3.112 12.956 3.112 12.956l8.678 1.785A4.085 4.085 0 0 1 2436.846 763.128Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-2239.234" Y="-686.71"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_95" Fill="#FFED7D2B">
+                        <Path.Data>
+                            <PathGeometry Figures="M2443.238 881.625h-11.687a28.978 28.978 0 0 1-4.131-10.7l1.734-.531s2.194 10.012 3.469 10.165S2443.238 881.625 2443.238 881.625Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-2245.626" Y="-805.207"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_96" Fill="#FFFFB27D">
+                        <Path.Data>
+                            <PathGeometry Figures="M2282 672.613a10.722 10.722 0 0 1-3.543 2c-5.587 1.973-8.333-2.626-9.535-5.862a4.965 4.965 0 0 1 1.877-.817c.419-.1.841-.177 1.2-.236.589-.566 1.32-2.7 1.178-5.854l.278.042 4.661.727s-.045 1.461.008 2.831a5.377 5.377 0 0 0 .375 2.315c.361.037.578.063.578.063v0A29.311 29.311 0 0 1 2282 672.613Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-2098.997" Y="-612.285"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_97" Fill="#FFED985F">
+                        <Path.Data>
+                            <PathGeometry Figures="M2334.112 663.146s-.046 1.46.007 2.831c-2.59.033-4.054-2.271-4.669-3.557Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-2154.993" Y="-612.812"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_98" Fill="#FFF99746">
+                        <Path.Data>
+                            <PathGeometry Figures="M2249.024 745.769c-.013.1-1.259 4.151-1.273 4.252-.432 3.39-1.215 7.008-1.215 7.008h-1.711l-11.294-.022s1.362-4.111-2.232-10.41q-.177-.31-.369-.627c-.512-.841 2.718-9.829 2.718-9.829s1.414-.25 3.4-.41c.187.172 1.565 5.212 4.059 5.366 3.255.2 2.022-5.417 2.022-5.417a11.334 11.334 0 0 1 3.506 1.18C2246.633 736.853 2249.093 745.215 2249.024 745.769Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-2063.801" Y="-680.586"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_99" Fill="#FFFFB27D">
+                        <Path.Data>
+                            <PathGeometry Figures="M2324.338 562.987s-6.122.257-6.224-3.558-.959-6.352 2.945-6.677 4.7 1.111 5.047 2.376S2325.928 562.818 2324.338 562.987Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-2144.368" Y="-511.314"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_100" Fill="#FFFFFFFF">
+                        <Path.Data>
+                            <PathGeometry Figures="M2385.29 660.207s.067.453 1.074.464c0 0 .846.008.851-.484A2.476 2.476 0 0 0 2385.29 660.207Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-2206.652" Y="-610.582"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_101" Fill="#FF122544">
+                        <Path.Data>
+                            <PathGeometry Figures="M2334.087 630.218a6.729 6.729 0 0 1-4.607-4.154l.365-.115-.183.058.183-.058a6.332 6.332 0 0 0 4.335 3.894l.067.016-.089.374Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-2155.021" Y="-579.074"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_102" Fill="#FF2C3A64">
+                        <Path.Data>
+                            <PathGeometry Figures="M2389.333 677.265l-.334-.083a.32.32 0 0 1-.232-.386h0a.319.319 0 0 1 .386-.232l.334.083a.32.32 0 0 1 .232.386h0A.32.32 0 0 1 2389.333 677.265Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-2209.859" Y="-625.887"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_103" Fill="#FF2C3A64">
+                        <Path.Data>
+                            <PathGeometry Figures="M2320.194 521.024s3.942-.616 5.573 2.666c1.242 2.5.207 4.058-.28 4.537 0 0-.644-3.589-1.849-3.894a1.3 1.3 0 0 0-1.306.378c-.529.616-1.3 3.362-2.176 3.783 0 0-2.732.674-2.866-.279s-.059-3.921.629-4.4A18.221 18.221 0 0 0 2320.194 521.024Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-2143.693" Y="-481.963"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_104" Fill="#FFED7D2B">
+                        <Path.Data>
+                            <PathGeometry Figures="M2303.183 598.193l-.251.051a2.075 2.075 0 0 1-2.436-1.618l-.263-1.308a2.073 2.073 0 0 1 1.617-2.435l.25-.05a2.074 2.074 0 0 1 2.436 1.617l.264 1.308A2.074 2.074 0 0 1 2303.183 598.193Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-2127.927" Y="-548.399"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_105" Fill="#FFED7D2B">
+                        <Path.Data>
+                            <PathGeometry Figures="M2311.817 527.492a7.515 7.515 0 0 1 .256-4.2 2.889 2.889 0 0 1 1.5-1.648 1.748 1.748 0 0 1 .774-.18l.66.01c-2.172.824-2.676 5.249-2.507 5.721a.167.167 0 0 0-.017-.033Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-2138.509" Y="-482.409"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_106" Fill="#FFF99746">
+                        <Path.Data>
+                            <PathGeometry Figures="M2313.855 614.555l-.125.025a1.033 1.033 0 0 1-1.214-.806l-.132-.652a1.034 1.034 0 0 1 .806-1.214l.125-.025a1.033 1.033 0 0 1 1.213.806l.132.652A1.032 1.032 0 0 1 2313.855 614.555Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-2139.187" Y="-566.043"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_107" Fill="#FFED7D2B">
+                        <Path.Data>
+                            <PathGeometry Figures="M2238.792 871.088s1.362-4.111-2.232-10.41L2237.9 859s2.369 6.713 5.332 8.671 6.435 1.546 6.855 3.438Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-2069.06" Y="-794.67"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_108" Fill="#FFF99746">
+                        <Path.Data>
+                            <PathGeometry Figures="M2159.22 741.74a5.7 5.7 0 0 0-4.07 3.1c-1.632 2.883-4.73 13.658-4.73 17.775h13.044a4.061 4.061 0 0 0-.154-2.14l-8.072-1.56s4.859-7.215 4.91-10.326A30.248 30.248 0 0 0 2159.22 741.74Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-1989.371" Y="-686.192"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_109" Fill="#FFFFB27D">
+                        <Path.Data>
+                            <PathGeometry Figures="M2320.256 1000.691a21.738 21.738 0 0 1 2.962-.134 12.562 12.562 0 0 1 1.893.784 7.625 7.625 0 0 1 .784.674 1.667 1.667 0 0 1-.516.019c-.191-.043-.765-.081-.918-.094a4.772 4.772 0 0 0-.7.1h-3.94Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-2146.084" Y="-925.598"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_110" Fill="#FF233862">
+                        <Path.Data>
+                            <PathGeometry Figures="M2478.211 1008.409H2465.68a1 1 0 0 1 1-1h11.533Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-2281.021" Y="-931.966"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_111" Fill="#FF233862">
+                        <Path.Data>
+                            <PathGeometry Figures="M2592.9 838.56l-4.645 13.645h-19.5l4.772-13.645Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-2376.381" Y="-775.761"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_112" Fill="#FF2B478B">
+                        <Path.Data>
+                            <PathGeometry Figures="M2596.425 838.56l-4.6 13.518-.042.127h-19.21l4.771-13.645Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-2379.906" Y="-775.761"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_113" Fill="#FFF99746">
+                        <Path.Data>
+                            <PathGeometry Figures="M2731.841 916.344a1.256 1.256 0 0 1-1.162.944.727.727 0 0 1-.727-.944 1.259 1.259 0 0 1 1.162-.944A.726.726 0 0 1 2731.841 916.344Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-2525.479" Y="-846.846"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Контур_114" Fill="#FF233862">
+                        <Path.Data>
+                            <PathGeometry Figures="M2725.209 838.56l-4.6 13.518h-8.827l10.762-13.518Z" FillRule="NonZero"/>
+                        </Path.Data>
+                        <Path.RenderTransform>
+                            <TranslateTransform X="-2508.69" Y="-775.761"/>
+                        </Path.RenderTransform>
+                    </Path>
+                </Canvas>
+            </Canvas>
+        </Canvas>
+    </Viewbox>
+</UserControl>

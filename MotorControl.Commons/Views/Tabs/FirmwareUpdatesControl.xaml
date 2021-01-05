@@ -1,0 +1,49 @@
+﻿<UserControl x:Class="MotorControl.Commons.Views.Tabs.FirmwareUpdatesControl"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MotorControl.Commons.Popups"
+        xmlns:common="clr-namespace:MotorControl.Commons.Controls.Common" 
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="Connection Protocol" Style="{StaticResource MaterialDesignHeadline6TextBlock}"/>
+
+        <ComboBox Grid.Row="1" Grid.Column="0">
+            <ComboBoxItem IsSelected="True">TCP</ComboBoxItem>
+            <ComboBoxItem>Serial</ComboBoxItem>
+        </ComboBox>
+
+        <Button Grid.Row="1" Grid.Column="1" Content="CONNECT" />
+
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="Connection Protocol" Style="{StaticResource MaterialDesignHeadline6TextBlock}"/>
+
+        <Border Grid.Row="3" Grid.Column="0" Style="{StaticResource ComboBoxBorder}">
+            <Viewbox>
+                <materialDesign:PackIcon  Kind="CloudUploadOutline" />
+            </Viewbox>
+        </Border>
+        
+        <Button Grid.Row="3" Grid.Column="1" Content="CONNECT" />
+
+        <common:Tile Title="Status"
+                         Grid.Row="4" Grid.ColumnSpan="3">
+            <Border Background="#FFF3F3F3"/>
+        </common:Tile>
+    </Grid>
+</UserControl>

@@ -1,0 +1,41 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Diagnostics;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+using MotorControl.Commons.ViewModels;
+
+namespace MotorControl.Commons.Views
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow(TabsControl tabsControl)
+        {
+            InitializeComponent();
+            this.ViewModel.Control = tabsControl;
+        }
+
+        private void ProcessOnRequestNavigate(object sender, RequestNavigateEventArgs e)
+        {
+            Process.Start(new ProcessStartInfo(e.Uri.AbsoluteUri) { UseShellExecute = true });
+        }
+
+        private MainWindowViewModel ViewModel
+        {
+            get => this.Resources["ViewModel"] as MainWindowViewModel;
+        }
+    }
+}
