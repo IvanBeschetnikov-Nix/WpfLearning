@@ -13,10 +13,20 @@
             <Setter Property="MinWidth" Value="140" />
             <Setter Property="Margin" Value="0,10,10,0" />
         </Style>
-        <Style TargetType="{x:Type common:Tile}">
-            <Setter Property="Padding" Value="20,20,10,20" />
+        <Style x:Key="CardStyle" TargetType="{x:Type materialDesign:Card}">
+            <Setter Property="MinWidth" Value="140" />
+            <Setter Property="Margin" Value="0,10,10,0" />
+            <Setter Property="materialDesign:ShadowAssist.ShadowDepth" Value="Depth0" />
+            <Setter Property="Background" Value="#FFF3F3F3" />
+            <Setter Property="Padding" Value="10" />
         </Style>
-        <Style TargetType="{x:Type Grid}">
+        <Style x:Key="VibrationStyle" TargetType="{x:Type TextBlock}">
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="FontSize" Value="18" />
+        </Style>
+            <Style TargetType="{x:Type Grid}">
             <Setter Property="Margin" Value="0,10,0,0" />
         </Style>
     </UserControl.Resources>
@@ -49,9 +59,10 @@
                                               Header="Power Output (W)" Value="3000" />
             <common:MotorControlReadbacksCard Grid.Row="3" Grid.Column="0" 
                                               Header="Torque (Nm)" Value="3000" />
-            <common:MotorControlReadbacksCard Grid.Row="3" Grid.Column="1" 
-                                              Header="Vibration" />
-            
+            <materialDesign:Card Grid.Row="3" Grid.Column="1" Style="{StaticResource CardStyle}">
+                <TextBlock Text="Vibration" Style="{StaticResource VibrationStyle}"/>
+            </materialDesign:Card>
+
         </Grid>
     </common:Tile>
 

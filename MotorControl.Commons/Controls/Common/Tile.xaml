@@ -6,8 +6,9 @@
              xmlns:local="clr-namespace:MotorControl.Commons.Controls.Common"
              mc:Ignorable="d">
     <UserControl.Resources>
-        <Style x:Key="TitleStyle" BasedOn="{StaticResource MaterialDesignHeadline5TextBlock}" TargetType="{x:Type TextBlock}">
+        <Style x:Key="TitleStyle" TargetType="{x:Type TextBlock}">
             <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="FontSize" Value="18" />
             <Style.Triggers>
                 <DataTrigger Binding="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type UserControl}}, Path=Title}" Value="{x:Null}">
                     <Setter Property="Margin" Value="-12" />

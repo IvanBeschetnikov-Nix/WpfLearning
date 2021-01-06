@@ -4,9 +4,10 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MotorControl.Commons.Views.MotorConnection"
-             xmlns:materialDesign="clr-namespace:MaterialDesignThemes.Wpf;assembly=MaterialDesignThemes.Wpf" xmlns:common="clr-namespace:MotorControl.Commons.Controls.Common"
+             xmlns:materialDesign="clr-namespace:MaterialDesignThemes.Wpf;assembly=MaterialDesignThemes.Wpf" 
+             xmlns:common="clr-namespace:MotorControl.Commons.Controls.Common"
              mc:Ignorable="d" 
-             d:DesignHeight="110" d:DesignWidth="300">
+             d:DesignHeight="150" d:DesignWidth="300">
     <common:Tile Title="Connection Protocol">
         <Grid>
             <Grid.ColumnDefinitions>
@@ -14,16 +15,16 @@
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition />
-                <RowDefinition />
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="1*"/>
             </Grid.RowDefinitions>
 
-            <ComboBox Grid.Row="0" Grid.Column="0" MinHeight="32" MinWidth="115"  Margin="0,0,15,0" VerticalContentAlignment="Center">
+            <ComboBox Grid.Row="0" Grid.Column="0" Margin="0,0,15,0" VerticalContentAlignment="Center">
                 <ComboBoxItem IsSelected="True">TCP</ComboBoxItem>
                 <ComboBoxItem>Serial</ComboBoxItem>
             </ComboBox>
 
-            <Button Grid.Row="0" Grid.Column="1" Content="CONNECT" FontSize="12" FontWeight="Bold" MinHeight="30" MinWidth="120"/>
+            <Button Grid.Row="0" Grid.Column="1" Content="CONNECT" />
 
             <TextBlock Grid.Row="1" Grid.Column="0" Text="Status:" Margin="0,10,0,0"/>
             <TextBlock Grid.Row="1" Grid.Column="1" Text="Connected" FontWeight="Bold" Foreground="#FF7FE021" Margin="0,10,0,0" HorizontalAlignment="Right"/>

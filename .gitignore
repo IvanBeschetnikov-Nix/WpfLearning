@@ -3,3 +3,8 @@
 ################################################################################
 
 /.vs/MotorControl
+/MotorControl.Commons/bin/Debug/netcoreapp3.1
+/MotorControl.Commons/obj
+/MotorControl.Engineer/bin/Debug/netcoreapp3.1
+/MotorControl.Engineer/obj
+*.user

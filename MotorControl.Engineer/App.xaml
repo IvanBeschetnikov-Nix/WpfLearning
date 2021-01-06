@@ -5,14 +5,16 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <materialDesign:CustomColorTheme BaseTheme="Light" PrimaryColor="#FFD8E1FF" SecondaryColor="#FFD8E1FF" />
+                <materialDesign:CustomColorTheme BaseTheme="Light" PrimaryColor="#FFD8E1FF" SecondaryColor="#3C3D59" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignExtensions;component/Themes/Generic.xaml" />
-                
+
+                <ResourceDictionary Source="pack://application:,,,/MotorControl.Commons;component/StyleOverrides/ToggleButtonOverrides.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MotorControl.Commons;component/StyleOverrides/GeneralOverrides.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MotorControl.Commons;component/StyleOverrides/ExpanderOverrides.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MotorControl.Commons;component/StyleOverrides/ComboBoxOverrides.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MotorControl.Commons;component/StyleOverrides/SliderOverrides.xaml" />
+                <!--<ResourceDictionary Source="pack://application:,,,/MotorControl.Commons;component/StyleOverrides/ToggleButtonOverrides.xaml" />-->
 
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>

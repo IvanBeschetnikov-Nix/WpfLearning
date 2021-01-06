@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:MotorControl.Commons.Views.MotorManagement"
              xmlns:common="clr-namespace:MotorControl.Commons.Controls.Common"
              mc:Ignorable="d" 
-            d:DesignHeight="220" d:DesignWidth="650">
+            d:DesignHeight="110" d:DesignWidth="750">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
@@ -37,9 +37,9 @@
 
 
         <TextBlock Grid.Row="0" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Set Speed (RPM)" />
-        <common:Numeric Grid.Row="0" Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Center" Width="80" Height="35" Margin="1,1,2,1"/>
+        <common:Numeric Grid.Row="0" Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Center" Width="80" Height="35" />
 
-        <Button Grid.Row="0" Grid.Column="5" Content="START" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="2,15,5,2" />
+        <Button Grid.Row="0" Grid.Column="5" Content="START" VerticalAlignment="Center" HorizontalAlignment="Center" />
 
         <TextBlock Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Motor Direction" FontWeight="Bold" />
         <ComboBox Grid.Row="1" Grid.Column="2" Width="80" Height="32" VerticalAlignment="Center" HorizontalAlignment="Center">
@@ -50,6 +50,6 @@
 
         <Slider Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="3" Orientation="Horizontal" Minimum="0" Maximum="50" Value="20" VerticalAlignment="Center" />
 
-        <Button Grid.Row="1" Grid.Column="5" Content="STOP" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5,15,2,2" />
+        <Button Grid.Row="1" Grid.Column="5" Content="STOP" VerticalAlignment="Center" HorizontalAlignment="Center" />
     </Grid>
 </UserControl>

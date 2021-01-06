@@ -45,7 +45,7 @@
     <Compile Update="Views\Tabs\FirmwareUpdatesControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Popups\MonitorWindow.xaml.cs">
+    <Compile Update="Views\Tabs\MonitorWindowControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\MotorConnection\MotorConnectionControl.xaml.cs">
@@ -78,7 +78,7 @@
     <Compile Update="Views\Readbacks\DigitalReadbacksControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\Readbacks\GraphicalReadbacks.xaml.cs">
+    <Compile Update="Views\Tabs\GraphicalReadbacks.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\Warnings\WarningControl.xaml.cs">
@@ -120,7 +120,7 @@
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Popups\MonitorWindow.xaml">
+    <Page Update="Views\Tabs\MonitorWindowControl.xaml">
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       <SubType>Designer</SubType>
     </Page>
@@ -167,7 +167,7 @@
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\Readbacks\GraphicalReadbacks.xaml">
+    <Page Update="Views\Tabs\GraphicalReadbacks.xaml">
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       <SubType>Designer</SubType>
     </Page>
@@ -175,6 +175,10 @@
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       <SubType>Designer</SubType>
     </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Popups\" />
   </ItemGroup>
 
 </Project>

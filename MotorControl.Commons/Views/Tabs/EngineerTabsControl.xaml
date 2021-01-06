@@ -6,7 +6,6 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:common="clr-namespace:MotorControl.Commons.Controls.Common" 
                  xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
-                 xmlns:readbacks="clr-namespace:MotorControl.Commons.Views.Readbacks" 
                  xmlns:tabs="clr-namespace:MotorControl.Commons.Views.Tabs"
                  mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
@@ -22,13 +21,6 @@
                                         <Setter Property="Template">
                                             <Setter.Value>
                                                 <ControlTemplate TargetType="{x:Type TabItem}">
-                                                    <ControlTemplate.Resources>
-                                                        <ResourceDictionary>
-                                                            <ResourceDictionary.MergedDictionaries>
-                                                                <materialDesign:CustomColorTheme BaseTheme="Light" PrimaryColor="Black" SecondaryColor="Black" />
-                                                            </ResourceDictionary.MergedDictionaries>
-                                                        </ResourceDictionary>
-                                                    </ControlTemplate.Resources>
                                                     <RadioButton
                                                     Style="{StaticResource MaterialDesignTabRadioButton}"
                                                     Margin="4"
@@ -42,24 +34,15 @@
                                         </Setter>
                                     </Style>
                                 </ResourceDictionary>
-                                
+
                             </ControlTemplate.Resources>
                             <Grid>
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="Auto"/>
                                     <RowDefinition />
                                 </Grid.RowDefinitions>
-                                <!--<materialDesign:CustomColorTheme BaseTheme="Light" PrimaryColor="Black" SecondaryColor="Black" />-->
-                                <UniformGrid Grid.Row="0" IsItemsHost="True" Rows="1" Background="Transparent" />
-                                <ContentPresenter Grid.Row="1" ContentSource="SelectedContent">
-                                    <ContentPresenter.Resources>
-                                        <ResourceDictionary>
-                                            <ResourceDictionary.MergedDictionaries>
-                                                <materialDesign:CustomColorTheme BaseTheme="Light" PrimaryColor="#FFD8E1FF" SecondaryColor="#FFD8E1FF" />
-                                            </ResourceDictionary.MergedDictionaries>
-                                        </ResourceDictionary>
-                                    </ContentPresenter.Resources>
-                                </ContentPresenter>
+                                <UniformGrid Grid.Row="0" IsItemsHost="True" Rows="1" />
+                                <ContentPresenter Grid.Row="1" ContentSource="SelectedContent" />
                             </Grid>
 
                         </ControlTemplate>
@@ -68,40 +51,23 @@
             </Style>
         </ResourceDictionary>
 
-        
+
     </src:TabsControl.Resources>
     <common:Tile>
-        <!--<StackPanel
-  Orientation="Horizontal"
-  Margin="4">
-            <RadioButton
-    Style="{StaticResource MaterialDesignTabRadioButton}"
-    Margin="4"
-    IsChecked="True"
-    Content="FIRST" />
-            <RadioButton
-    Style="{StaticResource MaterialDesignTabRadioButton}"
-    Margin="4"
-    IsChecked="False"
-    Content="SECOND" />
-            <RadioButton
-    Style="{StaticResource MaterialDesignTabRadioButton}"
-    Margin="4"
-    IsChecked="False"
-    IsEnabled="False"
-    Content="THIRD" />
-        </StackPanel>-->
         <TabControl>
-
             <TabItem Header="Graphical Readbacks">
-                <readbacks:GraphicalReadbacks />
+                <tabs:GraphicalReadbacks />
             </TabItem>
-            <TabItem Header="Monitor Window" />
+            <TabItem Header="Monitor Window">
+                <tabs:MonitorWindowControl />
+            </TabItem>
             <TabItem Header="Firmware Update">
                 <tabs:FirmwareUpdatesControl />
             </TabItem>
 
-            <TabItem Header="Engineering Restricted" />
+            <TabItem Header="Engineering Restricted">
+                <tabs:EngineeringRestrictedControl />
+            </TabItem>
         </TabControl>
     </common:Tile>
 

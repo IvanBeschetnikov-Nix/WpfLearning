@@ -8,30 +8,18 @@
              mc:Ignorable="d"
              DataContext="{Binding RelativeSource={RelativeSource Mode=Self}}"
              d:DesignHeight="450" d:DesignWidth="800">
-    <UserControl.Resources>
-        <Style x:Key="ValueStyle" BasedOn="{StaticResource MaterialDesignHeadline6TextBlock}" TargetType="{x:Type TextBlock}">
-            <Style.Triggers>
-                <DataTrigger Binding="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type UserControl}}, Path=Value}" Value="{x:Null}">
-                    <Setter Property="Margin" Value="-12" />
-                </DataTrigger>
-            </Style.Triggers>
-        </Style>
-    </UserControl.Resources>
-
     <materialDesign:Card
         materialDesign:ShadowAssist.ShadowDepth="Depth0" 
-        Background="#FFF3F3F3"
-        Padding="10">
+        Background="#FFF3F3F3">
 
         <materialDesign:Card.Content>
             <StackPanel VerticalAlignment="Center">
                 <TextBlock Text="{Binding Header}" 
-                           Style="{StaticResource MaterialDesignSubtitle1TextBlock}"
                            HorizontalAlignment="Center" 
                            VerticalAlignment="Center"/>
 
                 <TextBlock Text="{Binding Value}"
-                           Style="{StaticResource ValueStyle}"
+                           FontWeight="Bold"
                            HorizontalAlignment="Center" 
                            VerticalAlignment="Center">
                 </TextBlock>
