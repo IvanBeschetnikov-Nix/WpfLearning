@@ -25,6 +25,8 @@ namespace MotorControl.Commons.Views
         public MainWindow(TabsControl tabsControl)
         {
             InitializeComponent();
+            Loaded += ViewModel.OnLoaded;
+            Unloaded += ViewModel.OnUnloaded;
             this.ViewModel.Control = tabsControl;
         }
 

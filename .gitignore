@@ -2,9 +2,23 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/.vs/MotorControl
-/MotorControl.Commons/bin/Debug/netcoreapp3.1
+/.vs
+/MotorControl.Commons/bin
 /MotorControl.Commons/obj
-/MotorControl.Engineer/bin/Debug/netcoreapp3.1
+/MotorControl.Commons/.vs
+/MotorControl.Engineer/bin
 /MotorControl.Engineer/obj
+/MotorControl.Engineer/Properties
 *.user
+/.idea/.idea.MotorControl
+/MotorControlStyles
+/MotorControlWinForms
+/MotorControlWpfFramework
+/WpfApplication1
+/WpfApp1
+/temp
+/packages
+/obj
+/MotorControlWpf.zip
+/FirmwareUpdatesViewModel.cs
+/BundleOverrides.xaml

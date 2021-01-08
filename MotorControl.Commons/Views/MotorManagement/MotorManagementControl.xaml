@@ -35,9 +35,13 @@
     </UserControl.Resources>
     <StackPanel>
 
-        <Expander Header="Motor Information"
+        <Expander Padding="20"
+                  FontSize="30"
                   ex:ExtendedExpander.ToggleButtonCustomStyle="{StaticResource PlusMinusToggleButton}"
                   Background="White">
+            <Expander.Header>
+                <TextBlock Text="Motor Information" FontSize="18" FontWeight="Bold" />
+            </Expander.Header>
             <motor_management:MotorInformationControl />
         </Expander>
 

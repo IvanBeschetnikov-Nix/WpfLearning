@@ -1,11 +1,16 @@
-﻿using MotorControl.Commons.Shared;
+﻿using GalaSoft.MvvmLight.Messaging;
+using MotorControl.Commons.Models.Messages;
+using MotorControl.Commons.Shared;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Windows;
 
 namespace MotorControl.Commons.ViewModels
 {
-    public class MainWindowViewModel : BaseViewModel
+    public partial class MainWindowViewModel : BaseViewModel
     {
         private TabsControl _control;
         public TabsControl Control
@@ -16,6 +21,25 @@ namespace MotorControl.Commons.ViewModels
                 _control = value;
                 OnPropertyChanged(nameof(Control));
             }
+        }
+    }
+
+    public partial class MainWindowViewModel
+    {
+        public override void OnLoaded(object sender, RoutedEventArgs args)
+        {
+            SendDataToMotorInformation();
+            base.OnLoaded(sender, args);
+        }
+
+        public void SendDataToMotorInformation()
+        {
+            Task.Run(() =>
+            {
+                Thread.Sleep(2000);
+                Messenger.Default.Send<MessageToMotorInformation>(new MessageToMotorInformation { Connected = false });
+            });
+            
         }
     }
 }

@@ -118,7 +118,7 @@
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ToggleButton}">
                     <Border Background="{TemplateBinding Background}" 
-                            Padding="{Binding Path=(md:ExpanderAssist.HorizontalHeaderPadding), RelativeSource={RelativeSource AncestorType=Expander, AncestorLevel=1}}">
+                            Padding="{Binding Path=Padding, RelativeSource={RelativeSource AncestorType=Expander, AncestorLevel=1}}">
                         <Grid>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*"/>
@@ -264,7 +264,6 @@
                                     </Border.LayoutTransform>
 
                                     <Grid Name="ContentPanel"
-                                      Margin="{TemplateBinding Padding}"
                                       HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
                                       VerticalAlignment="{TemplateBinding VerticalContentAlignment}">
                                         <!--<Grid.LayoutTransform>
