@@ -7,9 +7,9 @@
              xmlns:materialDesign="clr-namespace:MaterialDesignThemes.Wpf;assembly=MaterialDesignThemes.Wpf" 
              xmlns:common="clr-namespace:MotorControl.Commons.Controls.Common"
              mc:Ignorable="d" 
-             d:DesignHeight="150" d:DesignWidth="300">
+             d:DesignHeight="150" d:DesignWidth="350">
     <common:Tile Title="Connection Protocol">
-        <Grid>
+        <Grid MaxHeight="150" VerticalAlignment="Top">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition />
                 <ColumnDefinition />

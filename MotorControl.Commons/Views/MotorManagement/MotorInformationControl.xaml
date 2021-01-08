@@ -4,8 +4,9 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MotorControl.Commons.Views.MotorManagement"
-             mc:Ignorable="d" 
-             d:DesignHeight="182" 
+             mc:Ignorable="d"
+             MinHeight="180"
+             d:DesignHeight="180"
              d:DesignWidth="280">
     <Grid Margin="20,0,20,20">
         <Grid.ColumnDefinitions>

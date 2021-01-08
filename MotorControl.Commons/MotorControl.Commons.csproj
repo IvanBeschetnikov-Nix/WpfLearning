@@ -178,7 +178,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Interfaces\" />
     <Folder Include="Popups\" />
   </ItemGroup>
 

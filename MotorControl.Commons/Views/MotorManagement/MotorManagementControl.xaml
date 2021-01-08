@@ -6,9 +6,10 @@
              xmlns:local="clr-namespace:MotorControl.Commons.Views.MotorManagement"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:motor_management="clr-namespace:MotorControl.Commons.Views.MotorManagement"
-             xmlns:ex="clr-namespace:MotorControl.Commons.StyleOverrides" xmlns:readbacks="clr-namespace:MotorControl.Commons.Views.Readbacks"
+             xmlns:ex="clr-namespace:MotorControl.Commons.StyleOverrides" 
+             xmlns:readbacks="clr-namespace:MotorControl.Commons.Views.Readbacks"
              mc:Ignorable="d" 
-             d:DesignHeight="600" d:DesignWidth="350">
+             d:DesignHeight="800" d:DesignWidth="350">
     <UserControl.Resources>
         <Style BasedOn="{StaticResource MaterialDesignExpanderOverrides}" TargetType="{x:Type Expander}">
             <Setter Property="HorizontalAlignment" Value="Stretch" />

@@ -7,7 +7,7 @@
              xmlns:common="clr-namespace:MotorControl.Commons.Controls.Common"
              mc:Ignorable="d" 
              MinHeight="300" MinWidth="300" 
-             d:DesignHeight="1200" d:DesignWidth="450">
+             d:DesignHeight="300" d:DesignWidth="450">
     <UserControl.Resources>
         <Style BasedOn="{StaticResource MaterialDesignExpanderOverrides}" TargetType="{x:Type Expander}">
             <Setter Property="HorizontalAlignment" Value="Stretch" />
@@ -18,7 +18,7 @@
         </Style>
     </UserControl.Resources>
     <common:Tile Title="Parameter Settings">
-        
+
         <common:Tile.NeighbourTitleTemplate>
             <TextBlock Text="Expand All"
                 DockPanel.Dock="Right" 

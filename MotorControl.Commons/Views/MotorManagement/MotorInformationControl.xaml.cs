@@ -26,14 +26,14 @@ namespace MotorControl.Commons.Views.MotorManagement
         public MotorInformationControl()
         {
             InitializeComponent();
-            Messenger.Default.Register<MessageToMotorInformation>(this, MessageHandler);
+            Messenger.Default.Register<MessageToMotorInformationControl>(this, MessageHandler);
         }
 
-        private void MessageHandler(MessageToMotorInformation message)
+        private void MessageHandler(MessageToMotorInformationControl message)
         {
             Application.Current.Dispatcher.Invoke(() => 
             {
-                //this.Content = new NoDataControl_1();
+                this.Content = new NoDataControl_1();
             });
         }
     }

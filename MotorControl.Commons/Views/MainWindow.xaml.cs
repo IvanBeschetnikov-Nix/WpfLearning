@@ -30,10 +30,7 @@ namespace MotorControl.Commons.Views
             this.ViewModel.Control = tabsControl;
         }
 
-        private void ProcessOnRequestNavigate(object sender, RequestNavigateEventArgs e)
-        {
-            Process.Start(new ProcessStartInfo(e.Uri.AbsoluteUri) { UseShellExecute = true });
-        }
+        
 
         private MainWindowViewModel ViewModel
         {

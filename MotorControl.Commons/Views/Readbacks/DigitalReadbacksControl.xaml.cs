@@ -1,4 +1,7 @@
-﻿using System;
+﻿using GalaSoft.MvvmLight.Messaging;
+using MotorControl.Commons.Controls.Common.NoData;
+using MotorControl.Commons.Models.Messages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +26,15 @@ namespace MotorControl.Commons.Views.Readbacks
         public DigitalReadbacksControl()
         {
             InitializeComponent();
+            Messenger.Default.Register<MessageToDigitalReadbacksControl>(this, MessageHandler);
+        }
+
+        private void MessageHandler(MessageToDigitalReadbacksControl message)
+        {
+            Application.Current.Dispatcher.Invoke(() =>
+            {
+                this.Content = new NoDataControl_1();
+            });
         }
     }
 }

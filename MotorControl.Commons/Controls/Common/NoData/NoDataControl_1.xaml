@@ -4,10 +4,10 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MotorControl.Commons.Controls.Common.NoData"
-             mc:Ignorable="d" Width="370" Height="180">
+             mc:Ignorable="d" d:DesignWidth="370" d:DesignHeight="180">
     <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-        <TextBlock Text="No Data. " FontSize="18" FontWeight="Bold" HorizontalAlignment="Center"/>
-        <TextBlock Text="Please, Set connection " FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" />
+        <TextBlock Text="No Data." FontSize="18" FontWeight="Bold" HorizontalAlignment="Center"/>
+        <TextBlock Text="Please, set connection" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" />
         <TextBlock Text="with motor first." FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" />
     </StackPanel>
 

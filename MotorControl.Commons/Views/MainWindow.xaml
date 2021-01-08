@@ -4,7 +4,6 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MotorControl.Commons"
-        
         xmlns:motor_connection="clr-namespace:MotorControl.Commons.Views.MotorConnection"
         xmlns:motor_managementL="clr-namespace:MotorControl.Commons.Views.MotorManagement"
         xmlns:readbacks="clr-namespace:MotorControl.Commons.Views.Readbacks" 
@@ -12,46 +11,36 @@
         xmlns:parametersettings="clr-namespace:MotorControl.Commons.Views.ParameterSettings" 
         xmlns:common="clr-namespace:MotorControl.Commons.Controls.Common" 
         xmlns:views="clr-namespace:MotorControl.Commons.Views" 
-        xmlns:viewmodel="clr-namespace:MotorControl.Commons.ViewModels" xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:viewmodel="clr-namespace:MotorControl.Commons.ViewModels" xmlns:companysupport="clr-namespace:MotorControl.Commons.Views.CompanySupport"
         mc:Ignorable="d"
-        Title="MainWindow" MinHeight="800" MinWidth="1250">
+        Title="MainWindow" Height="1100" Width="1750">
     <Window.Resources>
         <viewmodel:MainWindowViewModel x:Key="ViewModel" />
     </Window.Resources>
-    <Grid Background="#FFF3F3F3" DataContext="{StaticResource ViewModel}">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="350"></ColumnDefinition>
-            <ColumnDefinition MinWidth="750"></ColumnDefinition>
-            <ColumnDefinition Width="450"></ColumnDefinition>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="90"></RowDefinition>
-            <RowDefinition Height="150"></RowDefinition>
-            <RowDefinition Height="Auto"></RowDefinition>
-        </Grid.RowDefinitions>
+    <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+        <Grid Background="#FFF3F3F3" DataContext="{StaticResource ViewModel}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="350"></ColumnDefinition>
+                <ColumnDefinition MinWidth="900"></ColumnDefinition>
+                <ColumnDefinition Width="450"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"></RowDefinition>
+                <RowDefinition Height="150"></RowDefinition>
+                <RowDefinition MinHeight="850"></RowDefinition>
+            </Grid.RowDefinitions>
 
-        <common:Tile Grid.Column="0" Grid.Row="0" Padding="10">
-            <Image Source="pack://application:,,,/MotorControl.Commons;component/Resources/logo.png" />
-        </common:Tile>
+            <common:Tile Grid.Column="0" Grid.Row="0">
+                <Image Source="pack://application:,,,/MotorControl.Commons;component/Resources/logo.png" />
+            </common:Tile>
 
-        <common:Tile Grid.Column="1" Grid.Row="0" Padding="5">
-            <StackPanel Orientation="Horizontal" Margin="50,0,50,0">
-                <views:SupportIconControl Grid.Column="1" Grid.Row="0" Margin="0,0,50,0" />
-                <TextBlock Text="Need Help? Write to us! " VerticalAlignment="Center" Style="{StaticResource MaterialDesignSubtitle2TextBlock}"/>
-                <TextBlock VerticalAlignment="Center" FontWeight="Bold">
-                    <TextBlock.TextDecorations>
-                        <TextDecoration/>
-                    </TextBlock.TextDecorations>
-                <Hyperlink NavigateUri="http://support.infinitumelectric.com" RequestNavigate="ProcessOnRequestNavigate" Foreground="Red">support.infinitumelectric.com</Hyperlink>
-                </TextBlock>
-            </StackPanel>
-        </common:Tile>
-
-        <motor_connection:MotorConnectionControl Grid.Column="0" Grid.Row="1" />
-        <motor_managementL:MotorManagementControl Grid.Column="0" Grid.Row="2" />
-        <motor_managementL:MotorControlControl Grid.Column="1" Grid.Row="1" />
-        <ContentControl Grid.Column="1" Grid.Row="2" Content="{Binding Control}"/>
-        <warnings:WarningControl Grid.Column="2" Grid.Row="0" Grid.RowSpan="2" />
-        <parametersettings:ParameterSettingsControl Grid.Column="2" Grid.Row="2" />
-    </Grid>
+            <companysupport:CompanySupportControl Grid.Column="1" Grid.Row="0" />
+            <motor_connection:MotorConnectionControl Grid.Column="0" Grid.Row="1" />
+            <motor_managementL:MotorManagementControl Grid.Column="0" Grid.Row="2" />
+            <motor_managementL:MotorControlControl Grid.Column="1" Grid.Row="1" />
+            <ContentControl Grid.Column="1" Grid.Row="2" Content="{Binding Control}"/>
+            <warnings:WarningControl Grid.Column="2" Grid.Row="0" Grid.RowSpan="2" />
+            <parametersettings:ParameterSettingsControl Grid.Column="2" Grid.Row="2" VerticalAlignment="Top"/>
+        </Grid>
+    </ScrollViewer>
 </Window>

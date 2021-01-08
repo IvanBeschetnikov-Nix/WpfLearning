@@ -37,7 +37,8 @@ namespace MotorControl.Commons.ViewModels
             Task.Run(() =>
             {
                 Thread.Sleep(2000);
-                Messenger.Default.Send<MessageToMotorInformation>(new MessageToMotorInformation { Connected = false });
+                Messenger.Default.Send<MessageToMotorInformationControl>(new MessageToMotorInformationControl { Connected = false });
+                Messenger.Default.Send<MessageToDigitalReadbacksControl>(new MessageToDigitalReadbacksControl { Connected = false });
             });
             
         }

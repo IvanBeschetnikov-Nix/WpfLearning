@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:MotorControl.Commons.Views.MotorManagement"
              xmlns:common="clr-namespace:MotorControl.Commons.Controls.Common"
              mc:Ignorable="d" 
-            d:DesignHeight="110" d:DesignWidth="750">
+            d:DesignHeight="150" d:DesignWidth="900">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
@@ -17,20 +17,22 @@
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition />
+            <RowDefinition Height="75" MaxHeight="75" />
+            <RowDefinition Height="75" MaxHeight="75" />
             <RowDefinition />
         </Grid.RowDefinitions>
 
         <Border Style="{StaticResource MotorControlWhiteBorderStyle}"
                 Margin="5"
-                Grid.RowSpan="2" Grid.Column="0">
-            <TextBlock Text="Motor Control" TextAlignment="Center" VerticalAlignment="Center" FontWeight="Bold"/>
+                Grid.RowSpan="3">
         </Border>
 
         <Border Style="{StaticResource MotorControlWhiteBorderStyle}"
                 Margin="0,5,5,5"
-                Grid.RowSpan="2" Grid.ColumnSpan="5" Grid.Column="1">
+                Grid.RowSpan="3" Grid.ColumnSpan="5" Grid.Column="1">
         </Border>
+
+        <TextBlock Text="Motor Control" TextAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Grid.RowSpan="2" Grid.Column="0"/>
 
         <TextBlock Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Readback" />
         <common:MotorControlTextBox  Grid.Row="0" Grid.Column="2" Text="123" Width="80" Height="35" HorizontalAlignment="Center" />
