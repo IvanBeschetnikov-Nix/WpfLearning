@@ -6,6 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Popups\**" />
+    <EmbeddedResource Remove="Popups\**" />
+    <None Remove="Popups\**" />
+    <Page Remove="Popups\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Resources\logo.png" />
     <None Remove="Views\logo.png" />
     <None Remove="Views\иллюстрация_поддержка.svg" />
@@ -175,10 +182,6 @@
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       <SubType>Designer</SubType>
     </Page>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Popups\" />
   </ItemGroup>
 
 </Project>

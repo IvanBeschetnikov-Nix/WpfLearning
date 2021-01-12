@@ -1,4 +1,7 @@
-﻿using System;
+﻿using GalaSoft.MvvmLight.Messaging;
+using MotorControl.Commons.Controls.Common.NoData;
+using MotorControl.Commons.Models.Messages.Tabs;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -21,6 +24,15 @@ namespace MotorControl.Commons.Views.Tabs
         public EngineeringRestrictedControl()
         {
             InitializeComponent();
+            Messenger.Default.Register<MessageToEngineeringRestrictedControl>(this, MessageHandler);
+        }
+
+        private void MessageHandler(MessageToEngineeringRestrictedControl obj)
+        {
+            Application.Current.Dispatcher.Invoke(() =>
+            {
+                this.Content = new NoDataControl_2();
+            });
         }
     }
 }

@@ -1,4 +1,8 @@
-﻿using System;
+﻿using GalaSoft.MvvmLight.Messaging;
+using MotorControl.Commons.Controls.Common;
+using MotorControl.Commons.Controls.Common.NoData;
+using MotorControl.Commons.Models.Messages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +27,15 @@ namespace MotorControl.Commons.Views.Warnings
         public WarningControl()
         {
             InitializeComponent();
+            Messenger.Default.Register<MessageToWarningControl>(this, MessageHandler);
+        }
+
+        private void MessageHandler(MessageToWarningControl obj)
+        {
+            Application.Current.Dispatcher.Invoke(() =>
+            {
+                this.Content = new Tile() { Title = "Fault/Warnings", Content = new NoDataControl_3() };
+            });
         }
     }
 }

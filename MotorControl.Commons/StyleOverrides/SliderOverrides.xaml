@@ -105,8 +105,8 @@
                         <ColumnDefinition />
                         <ColumnDefinition />
                     </Grid.ColumnDefinitions>
-                    <Label Content="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Slider}}, Path=Minimum}" FontWeight="Bold" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-                    <Label Content="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Slider}}, Path=Maximum}" FontWeight="Bold" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+                    <TextBlock Text="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Slider}}, Path=Minimum}" FontWeight="Bold" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="Black"/>
+                    <TextBlock Text="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Slider}}, Path=Maximum}" FontWeight="Bold" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Top" Foreground="Black"/>
                 </Grid>
                 <TickBar x:Name="TopTick" Fill="{TemplateBinding Foreground}" Height="4" Margin="0,0,0,2" Placement="Top" Grid.Row="0" Visibility="Collapsed"/>
                 <TickBar x:Name="BottomTick" Fill="{TemplateBinding Foreground}" Height="4" Margin="0,2,0,0" Placement="Bottom" Grid.Row="2" Visibility="Collapsed"/>

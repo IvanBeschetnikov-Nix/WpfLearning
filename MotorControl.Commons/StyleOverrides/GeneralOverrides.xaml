@@ -7,6 +7,7 @@
 
     <Style BasedOn="{StaticResource MaterialDesignTextBox}" TargetType="{x:Type TextBox}">
         <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="FontSize" Value="16" />
     </Style>
 
     <Style x:Key="MotorControlDefaultCornerRadius" TargetType="{x:Type Border}">
@@ -28,20 +29,24 @@
 
     <Style BasedOn="{StaticResource MaterialDesignRaisedButton}" TargetType="{x:Type Button}">
         <Setter Property="MinHeight" Value="50" />
-        <Setter Property="FontSize" Value="14" />
+        <Setter Property="FontSize" Value="18" />
         <Setter Property="FontWeight" Value="Bold" />
     </Style>
 
+    <Style TargetType="{x:Type common:Numeric}">
+        <Setter Property="Height" Value="50" />
+    </Style>
+
+    <Style TargetType="{x:Type common:MotorControlTextBox}">
+        <Setter Property="Height" Value="50" />
+    </Style>
+
     <Style TargetType="{x:Type TextBlock}">
-        <Setter Property="FontSize" Value="14" />
+        <Setter Property="FontSize" Value="16" />
     </Style>
 
     <Style TargetType="{x:Type common:Tile}">
         <Setter Property="Padding" Value="20" />
-    </Style>
-
-    <Style TargetType="{x:Type ComboBox}">
-        <Setter Property="MinHeight" Value="50" />
     </Style>
 
 </ResourceDictionary>

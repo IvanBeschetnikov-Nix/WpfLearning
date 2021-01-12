@@ -1,4 +1,5 @@
 ﻿using GalaSoft.MvvmLight.Messaging;
+using MotorControl.Commons.Controls.Common;
 using MotorControl.Commons.Controls.Common.NoData;
 using MotorControl.Commons.Models.Messages;
 using System;
@@ -33,7 +34,7 @@ namespace MotorControl.Commons.Views.Readbacks
         {
             Application.Current.Dispatcher.Invoke(() =>
             {
-                this.Content = new NoDataControl_1();
+                this.Content = new Tile() { Title = "Digital Readbacks", Content = new NoDataControl_1() };
             });
         }
     }

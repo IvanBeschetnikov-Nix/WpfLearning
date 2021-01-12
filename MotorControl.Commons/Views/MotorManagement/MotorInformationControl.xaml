@@ -3,12 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:MotorControl.Commons.Views.MotorManagement"
+             xmlns:local="clr-namespace:MotorControl.Commons.Views.MotorManagement" 
+             xmlns:motormanagement="clr-namespace:MotorControl.Commons.Controls.Common.ViewModels.MotorManagement"
              mc:Ignorable="d"
              MinHeight="180"
              d:DesignHeight="180"
              d:DesignWidth="280">
-    <Grid Margin="20,0,20,20">
+    <UserControl.Resources>
+        <motormanagement:MotorInformationViewModel x:Key="ViewModel" />
+    </UserControl.Resources>
+    <Grid Margin="20,0,20,20" DataContext="{StaticResource ViewModel}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*"/>
             <ColumnDefinition />
@@ -23,21 +27,21 @@
         </Grid.RowDefinitions>
 
         <TextBlock Grid.Row="0" Grid.Column="0" Text="Motor Serial No." />
-        <TextBlock Grid.Row="0" Grid.Column="1" Text="7011 - 7014" />
+        <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding MotorSerialNo}" />
 
         <TextBlock Grid.Row="1" Grid.Column="0" Text="Model" />
-        <TextBlock Grid.Row="1" Grid.Column="1" Text="7021" />
+        <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding Model}" />
 
         <TextBlock Grid.Row="2" Grid.Column="0" Text="Voltage (V)" />
-        <TextBlock Grid.Row="2" Grid.Column="1" Text="7003" />
+        <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding Voltage}" />
 
         <TextBlock Grid.Row="3" Grid.Column="0" Text="Max Current (A)" />
-        <TextBlock Grid.Row="3" Grid.Column="1" Text="7021" />
+        <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding MaxCurrent}" />
 
         <TextBlock Grid.Row="4" Grid.Column="0" Text="Drive Run Time (hr)" />
-        <TextBlock Grid.Row="4" Grid.Column="1" Text="7021" />
+        <TextBlock Grid.Row="4" Grid.Column="1" Text="{Binding DriveRunTime}" />
 
         <TextBlock Grid.Row="5" Grid.Column="0" Text="Motor Run Time (hr)" />
-        <TextBlock Grid.Row="5" Grid.Column="1" Text="7021" />
+        <TextBlock Grid.Row="5" Grid.Column="1" Text="{Binding MotorRunTime}" />
     </Grid>
 </UserControl>

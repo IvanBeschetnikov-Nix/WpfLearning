@@ -11,6 +11,8 @@ namespace MotorControl.Commons.Controls.Common.ViewModels
 {
     public class NumericViewModel : BaseViewModel
     {
+        public static DependencyProperty ValueProperty = DependencyProperty.Register(nameof(Value), typeof(string), typeof(Numeric));
+
         private string _value;
 
         private Action IncreaseValue;
@@ -84,7 +86,7 @@ namespace MotorControl.Commons.Controls.Common.ViewModels
 
         private void SetIntegerValue(string value)
         {
-            if (int.TryParse(value, out int val))
+            if (int.TryParse(value ?? 0.ToString(), out int val))
             {
                 _value = val.ToString();
                 OnPropertyChanged(nameof(Value));
@@ -93,11 +95,14 @@ namespace MotorControl.Commons.Controls.Common.ViewModels
 
         private void SetDoubleValue(string value)
         {
-            if (decimal.TryParse(value, out decimal val))
+            if (decimal.TryParse(value ?? 0.ToString(), out decimal val))
             {
                 _value = val.ToString();
                 OnPropertyChanged(nameof(Value));
             }
         }
+
+        public void SetDoubleValue(double value) => _value = value.ToString();
+        public double GetDoubleValue() => double.Parse(_value);
     }
 }

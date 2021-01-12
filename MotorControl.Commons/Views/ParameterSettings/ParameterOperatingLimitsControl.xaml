@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:MotorControl.Commons.Views.ParameterSettings"
              mc:Ignorable="d" 
              d:DesignHeight="250" d:DesignWidth="300">
-    <Grid VerticalAlignment="Center" Background="#FFF3F3F3">
+    <Grid VerticalAlignment="Center">
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
             <ColumnDefinition />

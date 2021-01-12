@@ -7,7 +7,7 @@
              xmlns:common="clr-namespace:MotorControl.Commons.Controls.Common"
              mc:Ignorable="d" 
              MinHeight="300" MinWidth="300" 
-             d:DesignHeight="300" d:DesignWidth="450">
+             d:DesignHeight="3000" d:DesignWidth="450">
     <UserControl.Resources>
         <Style BasedOn="{StaticResource MaterialDesignExpanderOverrides}" TargetType="{x:Type Expander}">
             <Setter Property="HorizontalAlignment" Value="Stretch" />
@@ -47,19 +47,31 @@
             <Button Content="LEAD" Grid.Column="2" Margin="5"/>
 
             <StackPanel Margin="0,10,0,0" Grid.Row="1" Grid.ColumnSpan="3">
-                <Expander Header="Operating Limits">
+                <Expander Style="{StaticResource MaterialDesignExpanderContentBackgroundTransparent}">
+                    <Expander.Header>
+                        <TextBlock Text="Operating Limits" Padding="10" />
+                    </Expander.Header>
                     <parameterSettings:ParameterOperatingLimitsControl />
                 </Expander>
 
-                <Expander Header="Operation Type">
+                <Expander Style="{StaticResource MaterialDesignExpanderContentBackgroundTransparent}">
+                    <Expander.Header>
+                        <TextBlock Text="Operation Type" Padding="10" />
+                    </Expander.Header>
                     <parameterSettings:ParameterOperationTypeControl />
                 </Expander>
 
-                <Expander Header="Fault Reset">
+                <Expander Style="{StaticResource MaterialDesignExpanderContentBackgroundTransparent}">
+                    <Expander.Header>
+                        <TextBlock Text="Fault Reset" Padding="10" />
+                    </Expander.Header>
                     <parameterSettings:ParameterFaultResetControl />
                 </Expander>
 
-                <Expander Header="Terminal Settings">
+                <Expander Style="{StaticResource MaterialDesignExpanderContentBackgroundTransparent}">
+                    <Expander.Header>
+                        <TextBlock Text="Terminal Settings" Padding="10" />
+                    </Expander.Header>
                     <parameterSettings:ParameterTerminalSettingsControl />
                 </Expander>
 

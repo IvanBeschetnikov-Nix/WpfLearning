@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MotorControl.Commons.Models.Messages
 {
-    public class MessageToFaultWarningsControl : MotorState
+    public class MessageToWarningControl : MotorState
     {
     }
 }

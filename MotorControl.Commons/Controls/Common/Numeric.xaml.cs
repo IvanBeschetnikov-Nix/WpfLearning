@@ -21,7 +21,6 @@ namespace MotorControl.Commons.Controls.Common
     /// </summary>
     public partial class Numeric : UserControl
     {
-
         public Numeric()
         {
             InitializeComponent();

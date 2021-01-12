@@ -11,7 +11,8 @@
         xmlns:parametersettings="clr-namespace:MotorControl.Commons.Views.ParameterSettings" 
         xmlns:common="clr-namespace:MotorControl.Commons.Controls.Common" 
         xmlns:views="clr-namespace:MotorControl.Commons.Views" 
-        xmlns:viewmodel="clr-namespace:MotorControl.Commons.ViewModels" xmlns:companysupport="clr-namespace:MotorControl.Commons.Views.CompanySupport"
+        xmlns:viewmodel="clr-namespace:MotorControl.Commons.ViewModels" 
+        xmlns:companysupport="clr-namespace:MotorControl.Commons.Views.CompanySupport"
         mc:Ignorable="d"
         Title="MainWindow" Height="1100" Width="1750">
     <Window.Resources>
@@ -26,8 +27,8 @@
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="100"></RowDefinition>
-                <RowDefinition Height="150"></RowDefinition>
-                <RowDefinition MinHeight="850"></RowDefinition>
+                <RowDefinition Height="160"></RowDefinition>
+                <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
 
             <common:Tile Grid.Column="0" Grid.Row="0">
@@ -38,9 +39,9 @@
             <motor_connection:MotorConnectionControl Grid.Column="0" Grid.Row="1" />
             <motor_managementL:MotorManagementControl Grid.Column="0" Grid.Row="2" />
             <motor_managementL:MotorControlControl Grid.Column="1" Grid.Row="1" />
-            <ContentControl Grid.Column="1" Grid.Row="2" Content="{Binding Control}"/>
+            <ContentControl Grid.Column="1" Grid.Row="2" Content="{Binding Control}" MinHeight="490" VerticalAlignment="Top"/>
             <warnings:WarningControl Grid.Column="2" Grid.Row="0" Grid.RowSpan="2" />
-            <parametersettings:ParameterSettingsControl Grid.Column="2" Grid.Row="2" VerticalAlignment="Top"/>
+            <parametersettings:ParameterSettingsControl Grid.Column="2" Grid.Row="2" MinHeight="490" VerticalAlignment="Top"/>
         </Grid>
     </ScrollViewer>
 </Window>

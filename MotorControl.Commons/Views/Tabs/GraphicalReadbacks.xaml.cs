@@ -1,4 +1,7 @@
-﻿using LiveCharts;
+﻿using GalaSoft.MvvmLight.Messaging;
+using LiveCharts;
+using MotorControl.Commons.Controls.Common.NoData;
+using MotorControl.Commons.Models.Messages.Tabs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,6 +29,15 @@ namespace MotorControl.Commons.Views.Tabs
         public GraphicalReadbacks()
         {
             InitializeComponent();
+            Messenger.Default.Register<MessageToGraphicalReadbacksControl>(this, MessageHandler);
+        }
+
+        private void MessageHandler(MessageToGraphicalReadbacksControl obj)
+        {
+            Application.Current.Dispatcher.Invoke(() =>
+            {
+                this.Content = new NoDataControl_2();
+            });
         }
     }
 }

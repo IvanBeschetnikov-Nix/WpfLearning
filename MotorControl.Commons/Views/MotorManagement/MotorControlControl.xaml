@@ -6,52 +6,23 @@
              xmlns:local="clr-namespace:MotorControl.Commons.Views.MotorManagement"
              xmlns:common="clr-namespace:MotorControl.Commons.Controls.Common"
              mc:Ignorable="d" 
-            d:DesignHeight="150" d:DesignWidth="900">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition />
-            <ColumnDefinition />
-            <ColumnDefinition />
-            <ColumnDefinition />
-            <ColumnDefinition />
-            <ColumnDefinition />
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="75" MaxHeight="75" />
-            <RowDefinition Height="75" MaxHeight="75" />
-            <RowDefinition />
-        </Grid.RowDefinitions>
+            d:DesignHeight="160" d:DesignWidth="900">
 
-        <Border Style="{StaticResource MotorControlWhiteBorderStyle}"
-                Margin="5"
-                Grid.RowSpan="3">
+    <DockPanel>
+        <Border Style="{StaticResource MotorControlWhiteBorderStyle}" Margin="5,5,2,5">
+            <TextBlock 
+                DockPanel.Dock="Left" 
+                TextAlignment="Center" 
+                VerticalAlignment="Center" 
+                FontWeight="Bold" 
+                FontSize="18"
+                Margin="20,0,20,0" 
+                Text="Motor Control" />
         </Border>
-
-        <Border Style="{StaticResource MotorControlWhiteBorderStyle}"
-                Margin="0,5,5,5"
-                Grid.RowSpan="3" Grid.ColumnSpan="5" Grid.Column="1">
+        <Border Style="{StaticResource MotorControlWhiteBorderStyle}" Margin="2,5,5,5">
+            <!--<TextBlock Text="No Data" HorizontalAlignment="Center" VerticalAlignment="Center" DockPanel.Dock="Right" />-->
+            <local:MotorControlManagementPanelControl DockPanel.Dock="Right" />
         </Border>
+    </DockPanel>
 
-        <TextBlock Text="Motor Control" TextAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Grid.RowSpan="2" Grid.Column="0"/>
-
-        <TextBlock Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Readback" />
-        <common:MotorControlTextBox  Grid.Row="0" Grid.Column="2" Text="123" Width="80" Height="35" HorizontalAlignment="Center" />
-
-
-        <TextBlock Grid.Row="0" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Set Speed (RPM)" />
-        <common:Numeric Grid.Row="0" Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Center" Width="80" Height="35" />
-
-        <Button Grid.Row="0" Grid.Column="5" Content="START" VerticalAlignment="Center" HorizontalAlignment="Center" />
-
-        <TextBlock Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Motor Direction" FontWeight="Bold" />
-        <ComboBox Grid.Row="1" Grid.Column="2" Width="80" Height="32" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <ComboBoxItem IsSelected="True">CCW</ComboBoxItem>
-            <ComboBoxItem>ABS</ComboBoxItem>
-        </ComboBox>
-
-
-        <Slider Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="3" Orientation="Horizontal" Minimum="0" Maximum="50" Value="20" VerticalAlignment="Center" />
-
-        <Button Grid.Row="1" Grid.Column="5" Content="STOP" VerticalAlignment="Center" HorizontalAlignment="Center" />
-    </Grid>
 </UserControl>
