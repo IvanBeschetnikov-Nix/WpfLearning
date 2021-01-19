@@ -11,7 +11,8 @@
 
     <TextBox
             Margin="0,0,20,0"
-            VerticalAlignment="Center" 
+            VerticalAlignment="Center"
+            VerticalContentAlignment="Center"
             HorizontalAlignment="Right" 
             Text="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorLevel=1, AncestorType=local:MotorControlTextBox}, Path=Text}" />
     </Border>

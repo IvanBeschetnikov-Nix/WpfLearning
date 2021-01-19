@@ -18,7 +18,7 @@ using System.Windows;
 
 namespace MotorControl.Commons.ViewModels
 {
-    class FirmwareUpdateViewModel : BaseViewModel
+    public class FirmwareUpdateViewModel : BaseViewModel
     {
         private readonly string _maCAddress;
         private readonly string _ipAddress;
@@ -57,7 +57,10 @@ namespace MotorControl.Commons.ViewModels
 
         public FirmwareUpdateViewModel()
         {
-            var configuration = ServiceCollectionKeeper.ServiceProvider.GetRequiredService<IConfiguration>();
+            var configuration = 
+                ServiceCollectionKeeper
+                .ServiceProvider
+                .GetRequiredService<IConfiguration>();
 
             this.SetupBackgroundWorker();
 

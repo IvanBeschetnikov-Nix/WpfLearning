@@ -1,6 +1,7 @@
 ﻿using GalaSoft.MvvmLight.Messaging;
 using MotorControl.Commons.Controls.Common.NoData;
 using MotorControl.Commons.Models.Messages.Tabs;
+using MotorControl.Commons.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,12 +29,24 @@ namespace MotorControl.Commons.Views.Tabs
             Messenger.Default.Register<MessageToMonitorWindowControl>(this, MessageHandler);
         }
 
-        private void MessageHandler(MessageToMonitorWindowControl obj)
+        private void MessageHandler(MessageToMonitorWindowControl message)
         {
-            Application.Current.Dispatcher.Invoke(() =>
+            if (message.Connected)
             {
-                this.Content = new NoDataControl_2();
-            });
+                ViewModel.SetData(message.ModBus);
+            }
+            else
+            {
+                Application.Current.Dispatcher.Invoke(() =>
+                {
+                    this.Content = new NoDataControl_2();
+                });
+            }
+        }
+
+        private MonitorWindowViewModel ViewModel
+        {
+            get => this.Resources[nameof(ViewModel)] as MonitorWindowViewModel;
         }
     }
 }

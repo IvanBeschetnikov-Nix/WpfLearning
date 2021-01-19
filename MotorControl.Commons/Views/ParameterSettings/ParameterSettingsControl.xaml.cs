@@ -30,12 +30,19 @@ namespace MotorControl.Commons.Views.ParameterSettings
             Messenger.Default.Register<MessageToParameterSettingsControl>(this, MessageHandler);
         }
 
-        private void MessageHandler(MessageToParameterSettingsControl obj)
+        private void MessageHandler(MessageToParameterSettingsControl message)
         {
-            Application.Current.Dispatcher.Invoke(() =>
+            if (message.Connected)
             {
-                this.Content = new Tile() { Title = "Fault/Warnings", Content = new NoDataControl_3() };
-            });
+                this.IsEnabled = !message.MotorRunning;
+            }
+            else
+            {
+                Application.Current.Dispatcher.Invoke(() =>
+                {
+                    this.Content = new Tile() { Title = "Fault/Warnings", Content = new NoDataControl_3() };
+                });
+            }
         }
     }
 }

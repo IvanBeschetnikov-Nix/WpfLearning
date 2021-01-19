@@ -14,6 +14,8 @@ using System.Diagnostics;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using MotorControl.Commons.ViewModels;
+using GalaSoft.MvvmLight.Messaging;
+using MotorControl.Commons.Models.Messages;
 
 namespace MotorControl.Commons.Views
 {
@@ -25,12 +27,19 @@ namespace MotorControl.Commons.Views
         public MainWindow(TabsControl tabsControl)
         {
             InitializeComponent();
+
+            Messenger.Default.Register<MessageToMainWindow_MotorDirectionChanged>(this, MotorDirrecitonChanged);
+
             Loaded += ViewModel.OnLoaded;
             Unloaded += ViewModel.OnUnloaded;
+            Closing += ViewModel.OnClosing;
             this.ViewModel.Control = tabsControl;
         }
 
-        
+        private void MotorDirrecitonChanged(MessageToMainWindow_MotorDirectionChanged message)
+        {
+            this.ViewModel.DirectionAllowed = message.DirectionAllowed;
+        }
 
         private MainWindowViewModel ViewModel
         {

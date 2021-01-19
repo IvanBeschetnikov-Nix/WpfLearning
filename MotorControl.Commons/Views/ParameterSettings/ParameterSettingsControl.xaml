@@ -9,10 +9,9 @@
              MinHeight="300" MinWidth="300" 
              d:DesignHeight="3000" d:DesignWidth="450">
     <UserControl.Resources>
-        <Style BasedOn="{StaticResource MaterialDesignExpanderOverrides}" TargetType="{x:Type Expander}">
+        <Style BasedOn="{StaticResource MaterialDesignExpanderContentBackgroundTransparent}" TargetType="{x:Type Expander}">
             <Setter Property="HorizontalAlignment" Value="Stretch" />
             <Setter Property="Background" Value="#FFF3F3F3" />
-            <Setter Property="FontWeight" Value="Bold" />
             <Setter Property="FontSize" Value="13" />
             <Setter Property="Margin" Value="10" />
         </Style>
@@ -20,15 +19,24 @@
     <common:Tile Title="Parameter Settings">
 
         <common:Tile.NeighbourTitleTemplate>
-            <TextBlock Text="Expand All"
+            <Button>
+                <Button.Template>
+                    <ControlTemplate>
+                        <TextBlock Text="Expand All"
                 DockPanel.Dock="Right" 
                 HorizontalAlignment="Right" 
                 VerticalAlignment="Center"
+                FontSize="14"
                 FontWeight="Bold">
-                <TextBlock.TextDecorations>
-                    <TextDecoration/>
-                </TextBlock.TextDecorations>
-            </TextBlock>
+                            <TextBlock.TextDecorations>
+                                <TextDecoration/>
+                            </TextBlock.TextDecorations>
+                        </TextBlock>
+                    </ControlTemplate>
+
+                </Button.Template>
+            </Button>
+
         </common:Tile.NeighbourTitleTemplate>
 
         <Grid>
@@ -47,30 +55,30 @@
             <Button Content="LEAD" Grid.Column="2" Margin="5"/>
 
             <StackPanel Margin="0,10,0,0" Grid.Row="1" Grid.ColumnSpan="3">
-                <Expander Style="{StaticResource MaterialDesignExpanderContentBackgroundTransparent}">
+                <Expander>
                     <Expander.Header>
-                        <TextBlock Text="Operating Limits" Padding="10" />
+                        <TextBlock Text="Operating Limits" FontWeight="Bold" Padding="10" />
                     </Expander.Header>
-                    <parameterSettings:ParameterOperatingLimitsControl />
+                    <parameterSettings:ParameterOperatingLimitsControl/>
                 </Expander>
 
-                <Expander Style="{StaticResource MaterialDesignExpanderContentBackgroundTransparent}">
+                <Expander>
                     <Expander.Header>
-                        <TextBlock Text="Operation Type" Padding="10" />
+                        <TextBlock Text="Operation Type" FontWeight="Bold" Padding="10" />
                     </Expander.Header>
                     <parameterSettings:ParameterOperationTypeControl />
                 </Expander>
 
-                <Expander Style="{StaticResource MaterialDesignExpanderContentBackgroundTransparent}">
+                <Expander>
                     <Expander.Header>
-                        <TextBlock Text="Fault Reset" Padding="10" />
+                        <TextBlock Text="Fault Reset" FontWeight="Bold" Padding="10" />
                     </Expander.Header>
                     <parameterSettings:ParameterFaultResetControl />
                 </Expander>
 
-                <Expander Style="{StaticResource MaterialDesignExpanderContentBackgroundTransparent}">
+                <Expander>
                     <Expander.Header>
-                        <TextBlock Text="Terminal Settings" Padding="10" />
+                        <TextBlock Text="Terminal Settings" FontWeight="Bold" Padding="10" />
                     </Expander.Header>
                     <parameterSettings:ParameterTerminalSettingsControl />
                 </Expander>

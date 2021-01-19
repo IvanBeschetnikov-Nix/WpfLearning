@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using System.Collections.Generic;
+using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows;
 
@@ -29,6 +30,20 @@ namespace MotorControl.Commons.Shared
             if (_isLoaded)
             {
                 _isLoaded = false;
+            }
+        }
+
+
+        public virtual void OnClosing(object sender, CancelEventArgs e)
+        {
+        }
+
+        protected void SetPropertyValue<T>(ref T field, T newFieldValue, string propertyName)
+        {
+            if (!EqualityComparer<T>.Default.Equals(field, newFieldValue))
+            {
+                field = newFieldValue;
+                OnPropertyChanged(propertyName);
             }
         }
     }

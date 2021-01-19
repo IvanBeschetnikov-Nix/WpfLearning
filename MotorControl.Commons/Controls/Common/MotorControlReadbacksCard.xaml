@@ -6,7 +6,6 @@
              xmlns:local="clr-namespace:MotorControl.Commons.Controls.Common"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              mc:Ignorable="d"
-             DataContext="{Binding RelativeSource={RelativeSource Mode=Self}}"
              d:DesignHeight="450" d:DesignWidth="800">
     <materialDesign:Card
         materialDesign:ShadowAssist.ShadowDepth="Depth0" 
@@ -14,11 +13,11 @@
 
         <materialDesign:Card.Content>
             <StackPanel VerticalAlignment="Center">
-                <TextBlock Text="{Binding Header}" 
+                <TextBlock Text="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=local:MotorControlReadbacksCard}, Path=Header}" 
                            HorizontalAlignment="Center" 
                            VerticalAlignment="Center"/>
 
-                <TextBlock Text="{Binding Value}"
+                <TextBlock Text="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=local:MotorControlReadbacksCard}, Path=Value}" 
                            FontWeight="Bold"
                            HorizontalAlignment="Center" 
                            VerticalAlignment="Center">

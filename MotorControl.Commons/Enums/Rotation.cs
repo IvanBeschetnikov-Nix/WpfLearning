@@ -1,4 +1,4 @@
-﻿namespace MotorControl.Commons
+﻿namespace MotorControl.Commons.Enums
 {
     /// <summary>
     /// Options for motor direction rotation
@@ -15,5 +15,10 @@
         CW
     }
 
-
+    public enum RotationAllowed
+    {
+        CCW_Only,
+        CW_Only,
+        Both
+    }
 }

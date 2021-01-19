@@ -5,10 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MotorControl.Commons.Views.Tabs"
         xmlns:common="clr-namespace:MotorControl.Commons.Controls.Common" 
-        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
+             xmlns:viewmodels="clr-namespace:MotorControl.Commons.ViewModels"
+             mc:Ignorable="d"
         d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
+    <UserControl.Resources>
+        <viewmodels:FirmwareUpdateViewModel x:Key="ViewModel" />
+    </UserControl.Resources>
+    <Grid DataContext="{StaticResource ViewModel}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
             <ColumnDefinition />
@@ -43,7 +47,7 @@
 
         <common:Tile Title="Status"
                          Grid.Row="4" Grid.ColumnSpan="3">
-            <Border Background="#FFF3F3F3"/>
+            <ListView ItemsSource="{Binding}" /> 
         </common:Tile>
     </Grid>
 </UserControl>

@@ -1,7 +1,7 @@
 ﻿using GalaSoft.MvvmLight.Messaging;
 using MotorControl.Commons.Controls.Common.NoData;
-using MotorControl.Commons.Controls.Common.ViewModels.MotorManagement;
 using MotorControl.Commons.Models.Messages;
+using MotorControl.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;

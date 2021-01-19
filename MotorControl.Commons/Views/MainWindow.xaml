@@ -14,7 +14,7 @@
         xmlns:viewmodel="clr-namespace:MotorControl.Commons.ViewModels" 
         xmlns:companysupport="clr-namespace:MotorControl.Commons.Views.CompanySupport"
         mc:Ignorable="d"
-        Title="MainWindow" Height="1100" Width="1750">
+        Title="MainWindow" Height="900" Width="1750">
     <Window.Resources>
         <viewmodel:MainWindowViewModel x:Key="ViewModel" />
     </Window.Resources>

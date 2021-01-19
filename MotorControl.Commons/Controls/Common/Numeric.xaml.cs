@@ -1,4 +1,5 @@
-﻿using MotorControl.Commons.Controls.Common.ViewModels;
+﻿using MotorControl.Commons.Commanding.RelayCommand;
+using MotorControl.Commons.Controls.Common.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,29 +22,50 @@ namespace MotorControl.Commons.Controls.Common
     /// </summary>
     public partial class Numeric : UserControl
     {
+        public static readonly DependencyProperty MinValueProperty = DependencyProperty.Register(nameof(MinValue), typeof(decimal), typeof(Numeric));
+        public static readonly DependencyProperty MaxValueProperty = DependencyProperty.Register(nameof(MaxValue), typeof(decimal), typeof(Numeric));
+        public static readonly DependencyProperty ValueProperty = DependencyProperty.Register(nameof(Value), typeof(decimal), typeof(Numeric));
+        public static readonly DependencyProperty IsFloatProperty = DependencyProperty.Register(nameof(IsFloat), typeof(bool), typeof(Numeric));
+
         public Numeric()
         {
+            IncreaseCommand = new RelayCommand(IncreaseCommandHandler);
+            DecreaseCommand = new RelayCommand(DecreaseCommandHandler);
+
             InitializeComponent();
-
-            Loaded += ViewModel.OnLoaded;
-            Loaded += Numeric_Loaded;
-            Unloaded += ViewModel.OnUnloaded;
-
-            ViewModel.Initialize();
         }
 
-        private void Numeric_Loaded(object sender, RoutedEventArgs e)
+        public bool IsFloat { get => (bool)GetValue(IsFloatProperty); set => SetValue(IsFloatProperty, value); }
+        public decimal MinValue { get => (decimal)GetValue(MinValueProperty); set => SetValue(MinValueProperty, value); }
+        public decimal MaxValue { get => (decimal)GetValue(MaxValueProperty); set => SetValue(MaxValueProperty, value); }
+        public decimal Value
         {
-            ViewModel.Initialize(IsFloatNumeric);
+            get => IsFloat
+                ? (decimal)GetValue(ValueProperty)
+                : (int)((decimal)GetValue(ValueProperty));
+            set
+            {
+                if (IsValueInRange(value)) 
+                    SetValue(ValueProperty, value);
+            }
         }
 
-        public bool IsFloatNumeric { get; set; }
+        public RelayCommand IncreaseCommand { get; }
+        public RelayCommand DecreaseCommand { get; }
 
-        public Brush BorderBackground { get; set; } = new BrushConverter().ConvertFromString("#FFF3F3F3") as Brush;
 
-        public NumericViewModel ViewModel
+        private void DecreaseCommandHandler()
         {
-            get => this.Resources["ViewModel"] as NumericViewModel;
+            if (IsFloat) Value -= 0.1m;
+            else Value -= 1;
         }
+
+        private void IncreaseCommandHandler()
+        {
+            if (IsFloat) Value += 0.1m;
+            else Value += 1;
+        }
+
+        private bool IsValueInRange(decimal value) => value >= MinValue && value <= MaxValue;
     }
 }

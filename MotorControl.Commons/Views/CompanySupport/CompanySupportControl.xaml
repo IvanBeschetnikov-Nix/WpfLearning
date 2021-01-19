@@ -19,7 +19,9 @@
                 <Hyperlink 
                     NavigateUri="http://support.infinitumelectric.com" 
                     RequestNavigate="ProcessOnRequestNavigate" 
-                    Foreground="Red" FontSize="18" FontWeight="Bold">
+                    Foreground="#BE1E2D" 
+                    FontSize="18" 
+                    FontWeight="Bold">
                     support.infinitumelectric.com
                 </Hyperlink>
             </TextBlock>

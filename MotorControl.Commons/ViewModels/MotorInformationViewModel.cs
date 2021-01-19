@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace MotorControl.Commons.Controls.Common.ViewModels.MotorManagement
+namespace MotorControl.ViewModels
 {
     public class MotorInformationViewModel : BaseViewModel
     {
@@ -24,14 +24,5 @@ namespace MotorControl.Commons.Controls.Common.ViewModels.MotorManagement
         public string MaxCurrent { get => _maxCurrent; set => SetPropertyValue(ref _maxCurrent, value, nameof(MaxCurrent)); }
         public string DriveRunTime { get => _driveRunTime; set => SetPropertyValue(ref _driveRunTime, value, nameof(DriveRunTime)); }
         public string MotorRunTime { get => _motorRunTime; set => SetPropertyValue(ref _motorRunTime, value, nameof(MotorRunTime)); }
-
-        private void SetPropertyValue(ref string field, string newValue, string propertyName)
-        {
-            if (!string.Equals(field, newValue))
-            {
-                field = newValue;
-                OnPropertyChanged(propertyName);
-            }
-        }
     }
 }

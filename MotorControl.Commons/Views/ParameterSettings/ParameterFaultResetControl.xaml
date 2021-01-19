@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MotorControl.Commons.Views.ParameterSettings"
              mc:Ignorable="d" 
-             d:DesignHeight="100" d:DesignWidth="300">
+             d:DesignHeight="150" d:DesignWidth="300">
     <Grid VerticalAlignment="Center">
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
@@ -16,17 +16,17 @@
             <RowDefinition />
         </Grid.RowDefinitions>
 
-        <Label Grid.Row="0" Grid.Column="0" 
+        <Label Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" 
                Content="Number Of Attempts" />
-        
-        <ComboBox Grid.Row="0" Grid.Column="1">
+
+        <ComboBox Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" Margin="10,5,10,5">
             <ComboBoxItem Content="0 (Stop On Fault)" IsSelected="True" />
         </ComboBox>
-        
-        <Label Grid.Row="1" Grid.Column="0" 
+
+        <Label Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" 
                Content="Reset Delay (seconds)" />
 
-        <ComboBox Grid.Row="1" Grid.Column="1">
+        <ComboBox Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" Margin="10,5,10,5">
             <ComboBoxItem Content="0.0" IsSelected="True" />
         </ComboBox>
     </Grid>

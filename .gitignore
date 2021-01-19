@@ -6,9 +6,13 @@
 /MotorControl.Commons/bin
 /MotorControl.Commons/obj
 /MotorControl.Commons/.vs
+
 /MotorControl.Engineer/bin
 /MotorControl.Engineer/obj
-/MotorControl.Engineer/Properties
+
+/MotorControl.Technician/obj
+/MotorControl.Technician/bin
+
 *.user
 /.idea/.idea.MotorControl
 /MotorControlStyles

@@ -6,5 +6,6 @@ namespace MotorControl.Commons.Models.Messages
 {
     public class MessageToDigitalReadbacksControl : MotorState
     {
+        public ModBusWrapper ModBus { get; set; }
     }
 }

@@ -6,6 +6,9 @@
              xmlns:local="clr-namespace:MotorControl.Commons.Views.MotorManagement" 
              xmlns:common="clr-namespace:MotorControl.Commons.Controls.Common" 
              xmlns:viewmodels="clr-namespace:MotorControl.Commons.ViewModels"
+             xmlns:converters="clr-namespace:MotorControl.Commons.Converters"
+             xmlns:system="clr-namespace:System;assembly=mscorlib"
+             xmlns:enums="clr-namespace:MotorControl.Commons.Enums"
              mc:Ignorable="d"
              d:DesignHeight="160" d:DesignWidth="900">
     <UserControl.Resources>
@@ -16,7 +19,14 @@
             <Setter Property="Margin" Value="20,0,0,0" />
         </Style>
 
+        <ObjectDataProvider x:Key="RotationEnum" ObjectType="{x:Type system:Enum}" MethodName="GetValues">
+            <ObjectDataProvider.MethodParameters>
+                <x:Type TypeName="enums:Rotation" />
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+
         <viewmodels:MotorControlManagementPanelViewModel x:Key="ViewModel" />
+        <converters:InverseBooleanConverter x:Key="InverseBooleanConverter" />
     </UserControl.Resources>
     <Grid DataContext="{StaticResource ViewModel}">
         <Grid.ColumnDefinitions>
@@ -48,12 +58,17 @@
         
         <common:Numeric
             Grid.Row="0" Grid.Column="3"
-            Margin="40,0,0,0"
+            Height="50"
+            Margin="20,0,0,0"
+            Value="{Binding Speed}"
+            MinValue="{Binding SpeedMin}"
+            MaxValue="{Binding SpeedMax}"
             x:Name="NumericTag" />
 
-        <Button 
+        <Button
             Grid.Row="0" Grid.Column="4" 
             Margin="20,0,20,0"
+            IsEnabled="{Binding MotorRunning, Converter={StaticResource InverseBooleanConverter}}"
             Content="START" />
 
         <TextBlock 
@@ -62,12 +77,11 @@
 
         <ComboBox 
             Grid.Row="1" Grid.Column="1" 
-            Margin="20,0,20,0">
-
-            <ComboBoxItem IsSelected="True">CCW</ComboBoxItem>
-            <ComboBoxItem>ABS</ComboBoxItem>
-        </ComboBox>
-
+            Margin="20,0,20,0"
+            IsEnabled="{Binding IsEnabledMotorDirection}"
+            SelectedItem="{Binding MotorDirection}"
+            ItemsSource="{Binding Source={StaticResource RotationEnum}}"
+            SelectedIndex="0" />
 
         <Slider 
             Grid.Row="1" 
@@ -75,14 +89,16 @@
             VerticalAlignment="Center" 
             Margin="20,0,0,0"
             x:Name="SliderTag"
-            Minimum="-10" Maximum="50"
-            TickFrequency="1"
+            Maximum="{Binding ElementName=NumericTag, Path=MaxValue}"
+            Minimum="{Binding ElementName=NumericTag, Path=MinValue}"
+            TickFrequency="1" 
             IsSnapToTickEnabled="True"
-            Value="{Binding ElementName=NumericTag, Mode=TwoWay, Path=ViewModel.Value, UpdateSourceTrigger=PropertyChanged, TargetNullValue=0}" />
+            Value="{Binding ElementName=NumericTag, Mode=TwoWay, Path=Value, UpdateSourceTrigger=PropertyChanged}" />
 
         <Button 
             Grid.Row="1" Grid.Column="4" 
             Margin="20,0,20,0"
+            IsEnabled="{Binding MotorRunning}"
             Content="STOP" />
     </Grid>
 </UserControl>

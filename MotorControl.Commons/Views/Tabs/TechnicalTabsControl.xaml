@@ -6,7 +6,63 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MotorControl.Commons.Views.Tabs"
+             xmlns:common="clr-namespace:MotorControl.Commons.Controls.Common" 
+             xmlns:tabs="clr-namespace:MotorControl.Commons.Views.Tabs"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="900">
-    <TextBlock>Technical</TextBlock>
+    <src:TabsControl.Resources>
+        <ResourceDictionary>
+            <Style TargetType="{x:Type TabControl}">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type TabControl}">
+                            <ControlTemplate.Resources>
+                                <ResourceDictionary>
+                                    <Style TargetType="{x:Type TabItem}">
+                                        <Setter Property="Template">
+                                            <Setter.Value>
+                                                <ControlTemplate TargetType="{x:Type TabItem}">
+                                                    <RadioButton
+                                                    Style="{StaticResource MaterialDesignTabRadioButton}"
+                                                    Margin="4"
+                                                    IsChecked="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=TabItem}, Path=IsSelected}">
+                                                        <RadioButton.Content>
+                                                            <ContentPresenter ContentSource="Header" />
+                                                        </RadioButton.Content>
+                                                    </RadioButton>
+                                                </ControlTemplate>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Style>
+                                </ResourceDictionary>
+
+                            </ControlTemplate.Resources>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+                                <UniformGrid Grid.Row="0" IsItemsHost="True" Rows="1" />
+                                <ContentPresenter Grid.Row="1" ContentSource="SelectedContent" />
+                            </Grid>
+
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </ResourceDictionary>
+
+
+    </src:TabsControl.Resources>
+    <common:Tile>
+        <TabControl>
+            <TabItem Header="Graphical Readbacks">
+                <tabs:GraphicalReadbacks />
+            </TabItem>
+            <TabItem Header="Firmware Update">
+                <tabs:FirmwareUpdatesControl />
+            </TabItem>
+        </TabControl>
+    </common:Tile>
 </src:TabsControl>

@@ -28,12 +28,19 @@ namespace MotorControl.Commons.Views.MotorManagement
             Messenger.Default.Register<MessageToMotorControlManagementPanelControl>(this, MessageHandler);
         }
 
-        private void MessageHandler(MessageToMotorControlManagementPanelControl obj)
+        private void MessageHandler(MessageToMotorControlManagementPanelControl message)
         {
-            Application.Current.Dispatcher.Invoke(() =>
+            if (message.Connected == false)
             {
-                this.Content = new NoDataControl_2();
-            });
+                Application.Current.Dispatcher.Invoke(() =>
+                {
+                    this.Content = new NoDataControl_2();
+                });
+            }
+            else
+            {
+                ViewModel.UpdateData(message.ModBus, message.MotorRunning, message.DirectionAllowed);
+            }
         }
 
         private MotorControlManagementPanelViewModel ViewModel

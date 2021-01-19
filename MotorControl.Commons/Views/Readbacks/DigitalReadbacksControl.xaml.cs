@@ -2,6 +2,7 @@
 using MotorControl.Commons.Controls.Common;
 using MotorControl.Commons.Controls.Common.NoData;
 using MotorControl.Commons.Models.Messages;
+using MotorControl.Commons.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,12 +31,24 @@ namespace MotorControl.Commons.Views.Readbacks
             Messenger.Default.Register<MessageToDigitalReadbacksControl>(this, MessageHandler);
         }
 
+        private DigitalReadbacksViewModel ViewModel
+        {
+            get => this.Resources[nameof(ViewModel)] as DigitalReadbacksViewModel;
+        }
+
         private void MessageHandler(MessageToDigitalReadbacksControl message)
         {
-            Application.Current.Dispatcher.Invoke(() =>
+            if (message.Connected == false)
             {
-                this.Content = new Tile() { Title = "Digital Readbacks", Content = new NoDataControl_1() };
-            });
+                Application.Current.Dispatcher.Invoke(() =>
+                {
+                    this.Content = new Tile() { Title = "Digital Readbacks", Content = new NoDataControl_1() };
+                });
+            }
+            else
+            {
+                ViewModel.FillDigitalOutput(message.ModBus);
+            }
         }
     }
 }

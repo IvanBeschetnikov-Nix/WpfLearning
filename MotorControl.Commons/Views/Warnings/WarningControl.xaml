@@ -27,6 +27,8 @@
                 DockPanel.Dock="Right" 
                 HorizontalAlignment="Right" 
                 VerticalAlignment="Center"
+                FontSize="14"
+                Foreground="#BE1E2D"
                 FontWeight="Bold">
                 <TextBlock.TextDecorations>
                     <TextDecoration/>

@@ -6,5 +6,6 @@ namespace MotorControl.Commons.Models.Messages.Tabs
 {
     public class MessageToMonitorWindowControl : MotorState
     {
+        public ModBusWrapper ModBus { get; set; }
     }
 }

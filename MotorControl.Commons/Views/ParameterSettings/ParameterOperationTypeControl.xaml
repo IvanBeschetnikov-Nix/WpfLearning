@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MotorControl.Commons.Views.ParameterSettings"
              mc:Ignorable="d" 
-             d:DesignHeight="150" d:DesignWidth="300">
+             d:DesignHeight="300" d:DesignWidth="300">
     <Grid VerticalAlignment="Center">
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
@@ -19,25 +19,25 @@
             <RowDefinition />
         </Grid.RowDefinitions>
         
-        <Label Grid.Row="0" Grid.Column="0" MinHeight="25" Content="Control Mode" />
-        <Label Grid.Row="1" Grid.Column="0" MinHeight="25" Content="Speed Input Source"/>
-        <Label Grid.Row="2" Grid.Column="0" MinHeight="25" Content="Start/Stop Input Source"/>
-        <Label Grid.Row="3" Grid.Column="0" MinHeight="25" Content="Direction Input Source"/>
-        <Label Grid.Row="4" Grid.Column="0" MinHeight="25" Content="Clear Fault Input Source"/>
+        <Label Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Content="Control Mode" />
+        <Label Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Content="Speed Input Source"/>
+        <Label Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Content="Start/Stop Input Source"/>
+        <Label Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Content="Direction Input Source"/>
+        <Label Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" Content="Clear Fault Input Source"/>
 
-        <ComboBox Grid.Row="0" Grid.Column="1">
+        <ComboBox Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" Margin="10,5,10,5">
             <ComboBoxItem Content="Analog/Digital" IsSelected="True" />
         </ComboBox>
-        <ComboBox Grid.Row="1" Grid.Column="1">
+        <ComboBox Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" Margin="10,5,10,5">
             <ComboBoxItem Content="Modbus" IsSelected="True" />
         </ComboBox>
-        <ComboBox Grid.Row="2" Grid.Column="1">
+        <ComboBox Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" Margin="10,5,10,5">
             <ComboBoxItem Content="Modbus" IsSelected="True" />
         </ComboBox>
-        <ComboBox Grid.Row="3" Grid.Column="1">
+        <ComboBox Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" Margin="10,5,10,5">
             <ComboBoxItem Content="Modbus" IsSelected="True" />
         </ComboBox>
-        <ComboBox Grid.Row="4" Grid.Column="1">
+        <ComboBox Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" Margin="10,5,10,5">
             <ComboBoxItem Content="Modbus" IsSelected="True" />
         </ComboBox>
     </Grid>

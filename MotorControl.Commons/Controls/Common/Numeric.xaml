@@ -9,50 +9,58 @@
              mc:Ignorable="d"
              d:DesignHeight="50" d:DesignWidth="80">
     <UserControl.Resources>
-        <viewModels:NumericViewModel x:Key="ViewModel"  />
+        <Style TargetType="local:Numeric">
+            <Setter Property="Background" Value="#FFF3F3F3" />
+        </Style>
     </UserControl.Resources>
-    <Border DataContext="{StaticResource ViewModel}" 
-            Style="{StaticResource MotorControlBorderDefaultStyle}" 
-            Background="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorLevel=1, AncestorType={x:Type UserControl}}, Path=BorderBackground}">
-        
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="2*" />
-                    <ColumnDefinition />
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition />
-                </Grid.RowDefinitions>
+    <UserControl.Template>
+        <ControlTemplate TargetType="UserControl">
+            <Border 
+            Style="{StaticResource MotorControlBorderDefaultStyle}"
+                Background="{TemplateBinding Background}">
 
-                <TextBox Grid.Row="0" Grid.Column="0" Text="{Binding Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Center" Margin="20,0,0,0"/>
-                
-                <Viewbox Grid.Row="0" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,5,0">
-                    <StackPanel>
-                        <RepeatButton Height="2" Width="4" Margin="0.5,4,0.5,1" Command="{Binding IncreaseCommand}">
-                            <RepeatButton.Template>
-                                <ControlTemplate>
-                                    <Path Data="M66.18,29.742c-2.301-2.3-6.101-2.3-8.401,0l-56,56c-3.8,3.801-1.1,10.2,4.2,10.2h112c5.3,0,8-6.399,4.2-10.2L66.18,29.742" Fill="Black" Stretch="Fill" />
-                                </ControlTemplate>
-                            </RepeatButton.Template>
-                        </RepeatButton>
-                        <RepeatButton Height="2" Width="4" Margin="0.5,1,0.5,4" Command="{Binding DecreaseCommand}">
-                            <RepeatButton.Template>
-                                <ControlTemplate>
-                                    <Path Data="M66.18,29.742c-2.301-2.3-6.101-2.3-8.401,0l-56,56c-3.8,3.801-1.1,10.2,4.2,10.2h112c5.3,0,8-6.399,4.2-10.2L66.18,29.742" Fill="Black" Stretch="Fill" RenderTransformOrigin="0.5,0.5" >
-                                        <Path.RenderTransform>
-                                            <TransformGroup>
-                                                <ScaleTransform />
-                                                <SkewTransform />
-                                                <RotateTransform Angle="180"/>
-                                                <TranslateTransform/>
-                                            </TransformGroup>
-                                        </Path.RenderTransform>
-                                    </Path>
-                                </ControlTemplate>
-                            </RepeatButton.Template>
-                        </RepeatButton>
-                    </StackPanel>
-                </Viewbox>
-            </Grid>
-    </Border>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+
+                    <TextBox Grid.Row="0" Grid.Column="0" 
+                             Text="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=local:Numeric}, Path=Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                             VerticalAlignment="Center" VerticalContentAlignment="Center" Margin="20,0,0,0"/>
+
+                    <Viewbox Grid.Row="0" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,5,0">
+                        <StackPanel>
+                            <RepeatButton Height="2" Width="4" Margin="0.5,4,0.5,1" Command="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=local:Numeric}, Path=IncreaseCommand}">
+                                <RepeatButton.Template>
+                                    <ControlTemplate>
+                                        <Path Data="M66.18,29.742c-2.301-2.3-6.101-2.3-8.401,0l-56,56c-3.8,3.801-1.1,10.2,4.2,10.2h112c5.3,0,8-6.399,4.2-10.2L66.18,29.742" Fill="Black" Stretch="Fill" />
+                                    </ControlTemplate>
+                                </RepeatButton.Template>
+                            </RepeatButton>
+                            <RepeatButton Height="2" Width="4" Margin="0.5,1,0.5,4" Command="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=local:Numeric}, Path=DecreaseCommand}">
+                                <RepeatButton.Template>
+                                    <ControlTemplate>
+                                        <Path Data="M66.18,29.742c-2.301-2.3-6.101-2.3-8.401,0l-56,56c-3.8,3.801-1.1,10.2,4.2,10.2h112c5.3,0,8-6.399,4.2-10.2L66.18,29.742" Fill="Black" Stretch="Fill" RenderTransformOrigin="0.5,0.5" >
+                                            <Path.RenderTransform>
+                                                <TransformGroup>
+                                                    <ScaleTransform />
+                                                    <SkewTransform />
+                                                    <RotateTransform Angle="180"/>
+                                                    <TranslateTransform/>
+                                                </TransformGroup>
+                                            </Path.RenderTransform>
+                                        </Path>
+                                    </ControlTemplate>
+                                </RepeatButton.Template>
+                            </RepeatButton>
+                        </StackPanel>
+                    </Viewbox>
+                </Grid>
+            </Border>
+        </ControlTemplate>
+    </UserControl.Template>
 </UserControl>
